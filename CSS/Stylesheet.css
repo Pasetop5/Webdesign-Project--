@@ -1,14 +1,15 @@
-#logopic {
-
-position:absolute;
+nav img {
+    position:absolute;
     height: 5px;
     left: 0%;
     width: 5%;
     padding: 10px;
 }
 
-#logopic img{width: 80px;
-height:auto;}
+nav img{
+    width: 80px;
+    height:auto;
+}
 
 .navigation {
     text-align: center;
