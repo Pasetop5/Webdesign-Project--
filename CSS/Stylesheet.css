@@ -42,11 +42,15 @@ nav img {
 	margin:auto;
 	
 }
+
 .firstvideo{
    position: relative;
+   width:100%;
+   z-index: -2;
+   height:400px ;
    right: 0;
    bottom: 0;
-   z-index: -2; 
+
 }
 /*@media(min-aspect-ratio:16/9){
     .firstvideo{
