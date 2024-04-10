@@ -36,12 +36,12 @@ nav img {
 	width:100%;
 	transition:0.2s;
 	height:4px;
-	background:rgb(174, 172, 172);
+	background:rgb(108, 107, 107);
 	display:block;
 	margin:auto;
 	
 }
-.firstvideo{
+/*.firstvideo{
    position: absolute;
    right: 0;
    bottom: 0;
