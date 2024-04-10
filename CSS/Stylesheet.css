@@ -1,4 +1,8 @@
-#logopic{ float: left;
+#logopic {
+    float: left;
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
 .navigation {
@@ -9,19 +13,21 @@
     list-style-type: none;
     background-color: rgb(30, 29, 29);
     padding: 15px;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .navigation li {
     display: inline-block;
 }
+
 .navigation a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px; 
-    font-size: 16px; 
-    line-height: 1.5;}
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 .navigation a:hover {
     background-color: rgb(48, 48, 47);
