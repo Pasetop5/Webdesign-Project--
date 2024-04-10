@@ -1,5 +1,9 @@
 .header{
+<<<<<<< Updated upstream
 	background-color:transparent;   
+=======
+	background-color:rgb(0, 0, 0);   
+>>>>>>> Stashed changes
 	position:relative;
     min-height: auto;
 
@@ -33,11 +37,10 @@ nav img {
 }
 /*Adding a hovering effect to the navigation links*/
 .nav-links ul li:hover::after{
-	content:"";
 	width:100%;
 	transition:0.2s;
 	height:4px;
-	background:black;
+	background:rgb(174, 172, 172);
 	display:block;
 	margin:auto;
 	
