@@ -1,5 +1,5 @@
 .header{
-	background-color:transparent;   
+	background-color:black;   
 	position:relative;
     min-height: auto;
 
@@ -47,7 +47,7 @@ nav img {
    bottom: 0;
    z-index: -1;  
 }
-@media(min-aspect-ratio:16/9){
+/*@media(min-aspect-ratio:16/9){
     .firstvideo{
         height:auto;
         width:100%;
@@ -58,7 +58,7 @@ nav img {
         width:auto;
         height:100%;
     }
-}
+}*/
 .content{
 	color:white;
 	position:relative;
