@@ -33,6 +33,7 @@ nav img {
 }
 /*Adding a hovering effect to the navigation links*/
 .nav-links ul li:hover::after{
+    content:'';
 	width:100%;
 	transition:0.2s;
 	height:4px;
@@ -42,10 +43,10 @@ nav img {
 	
 }
 .firstvideo{
-   position: absolute;
+   position: relative;
    right: 0;
    bottom: 0;
-   z-index: -1;  
+   z-index: -2; 
 }
 /*@media(min-aspect-ratio:16/9){
     .firstvideo{
@@ -59,8 +60,9 @@ nav img {
         height:100%;
     }
 }*/
+
 .content{
-	color:white;
+	color:black;
 	position:relative;
 	text-align:center;
     font-weight: 400px;
