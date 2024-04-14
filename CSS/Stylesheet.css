@@ -42,6 +42,7 @@ body{
     width: 100%;
 }
 
+
 button.basic{
     font-size: 12px;
     font-weight: 600;
@@ -524,7 +525,7 @@ footer .copyright{
 /*Adding a back ground image and centering the homepage intro section*/
 .Mencontent{
     padding-top: 60px;
-      background-image: url('../Pictures/MenHomepage.jpg');
+      background-image: url('../Pictures/Homepagemen.jpg');
        height: 90vh;
        width: 100%;
        background-size: cover;
@@ -536,25 +537,78 @@ footer .copyright{
 
 }
 
-
-/*Native Page Styling /
-/*Adding a back ground image and centering the homepage intro section*/
-.Nativepage{
-    padding-top: 60px;
-      background-image: url('../Pictures/Native\ and\ sun.jpg');
-       height: 90vh;
-       width: 100%;
-       background-size: cover;
-       background-position: top 25% right 0;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: center;
-
+.Mencollections {
+    text-align: center;
+    font-size: 85px;
+    padding-top: 30px;
 }
 
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #c9690e;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%; 
+    margin: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color: #0c0c0c;
+}
 
+.product img {
+    width: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+}
+
+.product h3,
+.product h6 {
+    margin: 5px 0;
+}
+
+.product-stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.product:hover .price {
+    color: white; /* Change discount sale text color to white on hover */
+}
+.product-info .price {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.product:hover .cart-icon {
+    color: white; /* Change icon color to white on hover */
+}
 
 .content{
 	color:black;
