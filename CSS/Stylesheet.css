@@ -518,6 +518,23 @@ footer .copyright{
 }
 
 /*/
+
+/*Men's Page Styling /
+/*Adding a back ground image and centering the homepage intro section*/
+.Mencontent{
+    padding-top: 60px;
+      background-image: url('../Pictures/MenHomepage.jpg');
+       height: 90vh;
+       width: 100%;
+       background-size: cover;
+       background-position: top 25% right 0;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+
+}
+
 .content{
 	color:black;
 	position:relative;
