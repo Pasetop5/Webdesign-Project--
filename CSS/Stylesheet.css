@@ -111,16 +111,17 @@ button.clear{
 /*Adding hovering effect to the navigation links and highlight the current page while on it*/
 #navbar li a:hover,
 #navbar li a.active{
-    color: #088178;
+    color: chocolate;
 }
 
 /*Adding underline effect when there is hovering*/
-#navbar li a:hover::after,
-#navbar li a.active::after{
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 28%;
     height: 3px;
-    background:#088178;
+    background:chocolate;
     position: absolute;
     bottom: -3px;
     left: 30px;
