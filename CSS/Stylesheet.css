@@ -1,70 +1,523 @@
-.header{
-	background-color:black;   
-	position:relative;
-    min-height: auto;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    
 }
 
-nav{
-    display:flex;
-	padding:5px 20px;
-	justify-content: space-between;
-	align-items:center;
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
 }
 
-nav img {
-    height: 120px;
-    width: 150px;
-}
-.nav-links{
-	flex:1;
-	text-align:right;
-}
-.nav-links ul li{
-	list-style:none;	
-	display:inline-block;
-	padding: 6px 6px;
-	position:relative;
-}
-.nav-links ul li a {
-	color:white;
-	text-decoration:none;
-	font-size:15px;
-}
-/*Adding a hovering effect to the navigation links*/
-.nav-links ul li:hover::after{
-    content:'';
-	width:100%;
-	transition:0.2s;
-	height:4px;
-	background:rgb(108, 107, 107);
-	display:block;
-	margin:auto;
-	
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
 }
 
-.firstvideo{
-   position: relative;
-   width:100%;
-   z-index: -2;
-   height:400px ;
-   right: 0;
-   bottom: 0;
+h4{
+    font-size: 20px;
+    color: #222;
 
 }
-/*@media(min-aspect-ratio:16/9){
-    .firstvideo{
-        height:auto;
-        width:100%;
-    }
+h6{
+    font-weight: 700;
+    font-size: 12px;
 }
-@media(max-aspect-ratio:16/9){
-    .firstvideo{
-        width:auto;
-        height:100%;
-    }
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 30px 0;
 }*/
+body{
+    width: 100%;
+}
 
+button.basic{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 24px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+button.clear{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: white;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.3s;
+}
+/*Header Stlying*/
+/*resizing logo image*/
+#logo{
+    width: 60px;
+    height: 60px;
+}
+/*Aligning links and logocontained in the header section.Adding background and shadow*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color:black;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+/*Alining the list in a row*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   
+}
+/*Removing list structure*/
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+/*Removing underlines from links and adding transition */
+#navbar li a{
+    text-decoration:none ;
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.3 ease;
+}
+/*Adding hovering effect to the navigation links and highlight the current page while on it*/
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+/*Adding underline effect when there is hovering*/
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 28%;
+    height: 3px;
+    background:#088178;
+    position: absolute;
+    bottom: -3px;
+    left: 30px;
+}
+
+/*Home Page Styling*/
+/*Adding a back ground image and centering the homepage intro section*/
+.homecontent{
+ padding-top: 60px;
+   background-image: url('../Images/homepageback.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/*Spacing out the h4 from the other heading tags*/
+.homecontent h4{
+    padding-bottom: 15px;
+}
+/*Styling the h1 tag*/
+.homecontent h1{
+    color:lightslategrey;
+    padding-right: 50px;
+    font-weight: 800;
+}
+/*Button styling*/
+.homecontent button{
+    background-image: url('../Images/texture-1504364_640.jpg');
+    background-color: transparent;
+    color:darkslategrey;
+    border:0;
+    padding-top: 10px 80px 10px 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+/*Styling services information cards*/
+/*Resizing individual images for use in the cards*/
+.featurescont img{
+    width:245px;
+    height:200px ;
+}
+/*Making the images in the card responsive*/
+#homefeatures .featurescont img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Displaying the items in the section side by side*/
+#homefeatures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#homefeatures .featurescont{
+    width: 20%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    border: 2px solid #222;
+    margin-right: 2%;
+}
+
+/*Adding hover effect on the cards*/
+#homefeatures .featurescont:hover{
+    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+}
+/*Adding a border and color to the service name*/
+ .featurescont h6{
+    display: inline-block;
+    padding: 8px 6px 4px 2px;
+    line-height: 1;
+    border-radius: 5px;
+    color: grey;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+
+/*Aligning heading text to the center*/
+#homeproduct{
+    text-align: center;
+}
+
+#homeproduct .hpcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+
+}
+/*Fitting image to the container and making it responsive*/
+#homeproduct .hpDetail img{
+    width: 100%;
+    border-radius:  8px; 
+}
+/*Product cards styling*/
+#homeproduct .hpDetail{
+    width: 23%;
+    min-width: 250px;
+    padding: 8px 10px;
+    border: 1px solid grey;
+    border-radius:  14px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    margin: 12px 0;
+    transition: 0.02s ease;
+}
+/*Adding hovering effect on the cards*/
+#homeproduct .hpDetail:hover{
+    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+}
+/*Aligning card text to the center*/
+.hpdes{
+    text-align: center;
+    padding:5px 0;
+}
+
+/*Styling span and heading tags in the cards*/
+ .hpdes span{
+    color: darkslategrey;
+    font-weight: 600;
+    font-size: 11px;
+}
+.hpdes h5{
+    padding-top: 6px;
+    color:dimgray;
+    font-size: 16px;
+    font-weight: 800;
+}
+.hpdes h4{
+    padding-top:6px ;
+    font-size:18px ;
+    color: #222;
+    font-weight: 600;
+}
+/*Adding background image to the section*/
+#cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../Images/black-5273871_1280.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+} 
+
+#cta h4{
+    color: cornsilk;
+    font-size: 20px;
+    font-weight: 600;
+}
+#cta h2{
+    color: cornsilk;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+#cta h2 span{
+    color: chocolate;
+}
+/*Adding hover to the button*/
+#cta button:hover{
+    background: chocolate;
+    color: black;
+}
+
+/*Styling info boxes*/
+#cta2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cta2 .infobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../Images/balancing-1868051_1280.jpg');
+    width: 48%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+/*Changing background image for 2nd card*/
+#cta2 .infobox2{
+    background-image: url('../Images/man-6251691_640.jpg');  
+}
+.infobox h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.infobox h2{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+.infobox span{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+/*Adding hover effect to the card*/
+.infobox:hover button{
+    background: black;
+    border: 1px solid chocolate;
+}
+
+/*Styling different collection cards*/
+#cta3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('../Images/balancing-1868051_1280.jpg');
+        width: 32%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
+    
+ .banner{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+#cta3 .banner2{
+    background-image: url('../Images/balancing-1868051_1280.jpg');
+}
+#cta3 .banner3{
+    background-image: url('../Images/balancing-1868051_1280.jpg');
+}
+
+/*Styling newsletter area section*/
+/*Adding background image to the area*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('../Images/black-5273871_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: chocolate;
+    padding-left: 2%;
+    padding-right: 15%;
+    margin-top:1%;
+    margin-bottom: 1%;
+
+} 
+#newsletter h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+} 
+
+#newsletter p{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+} 
+
+#newsletter p span{
+
+    color: black;
+} 
+/*Sizing and outlining the email input area*/
+#newsletter input{
+    height: 40px;
+    padding: 0px 3px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid transparent ;
+    border-radius: 3px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*Aligning button and input area in a row*/
+.homeform{
+    display: flex;
+    width: 40%;
+}
+.homeform button{
+    background-color: chocolate;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*Styling Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .p1{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    margin-bottom: 15px;
+    width: 25%;
+}
+footer #logo{
+    margin-bottom: 15px;
+}
+footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 12px;
+    padding-bottom: 15px;
+    margin:0 0 6px 0 ;   
+}
+
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+
+}
+.footrow img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+footer .socials{
+    color: darkslategrey;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+footer .socials i:hover {
+    color: #222;
+}
+footer a:hover{
+    color: chocolate;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+/*.hero{
+
+    min-height:300px;
+	background-image:linear-gradient(rgba(243, 241, 242, 0.8),rgba(243, 241, 242, 0.8)),url("..\optimized imges\homepageback-min.jpg");   
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+/*.hero {
+    background-color: linear-gradient(rgba(243, 241, 242, 0.8));
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+#first{
+    height: 600px;
+    width: 600px;
+    float: right;
+
+}
+
+/*/
 .content{
 	color:black;
 	position:relative;
