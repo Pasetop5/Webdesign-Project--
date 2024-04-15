@@ -520,7 +520,8 @@ footer .copyright{
 
 /*Contact us Page styling*/
 #contpage{
-    background: linear-gradient(#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
+    background: linear-gradient(90deg,#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
+    
 }
 
 .contactus{
@@ -540,31 +541,33 @@ footer .copyright{
 
 }
 
-.cform{
+.form{
     grid-area: form;
+    
 }
 
-.cinfo{
+.info{
     grid-area: info;
     background:chocolate;
     margin-right: 1%;
     border: 2px solid black;
    
 }
-.cinfo{
+.info{
     color: black;
+  
 }
-.cinfo li{
+.info li{
     list-style: none;
 }
-.cinfo .infobox div{
+.info .infobox div{
     display: flex;
     align-items: center;
     margin-bottom: 10px;  
 }
 
-.cinfo .infobox div span{
-    min-width: 40px;
+.info .infobox div span{
+    width: 40px;
     height: 40px;
     color: white;
     background: black;
@@ -576,12 +579,14 @@ footer .copyright{
     margin-right: 28px;
 
 }
-.cmap{
+.map{
     grid-area: map;
+    
+
 }
 .fcontainer{
     padding: 40px;
-    background: white;
+    background:cornsilk;
     box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
 }
 .fcontainer{
@@ -592,12 +597,66 @@ footer .copyright{
     grid-template-areas: 
     "form info"
     "form map";
-    grid-gap:40px 20px;
+    grid-gap: 10px 20px;
     margin-top: 10px;
     
 }
 
+.formbox{
+    position: relative;
+    width: 100%;
+}
 
+.formbox .row1 .row2{
+    display: flex;
+    gap: 20px;
+}
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%; 
+}
+
+.formbox .row2.chatbox{
+    width: 100%;
+
+}
+
+.chatbox span{
+    color: #222;
+    margin-top: 10px;
+    margin-bottom:5px ;
+    font-weight: 500;
+}
+ .chatbox input{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+ }
+
+ .chatbox textarea{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;  
+ }
+
+ .chatbox input[type="submit"]
+ {
+    background:chocolate ;
+    color: #222;
+    border: none;
+    font-size: 14px;
+    max-width: 120px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 15px;
+ }
 /*Work by Tope*/
 
 /*Men's Page Styling /
