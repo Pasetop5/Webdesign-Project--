@@ -515,7 +515,59 @@ footer .copyright{
     width: 600px;
     float: right;
 
+}*/
+
+/*Contact us Page styling*/
+#contpage{
+    background: linear-gradient(#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
 }
+
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactus .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.title h2{
+    color: #222;
+    font-weight: 600;
+
+}
+
+.cform{
+    grid-area: form;
+}
+
+.cinfo{
+    grid-area: info;
+}
+
+.cmap{
+    grid-area: map;
+}
+.fcontainer{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
+}
+.fcontainer{
+    position: relative;
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap:40px 20px;
+    margin-top: 10px;
+    
+}
+
 
 /*/
 
