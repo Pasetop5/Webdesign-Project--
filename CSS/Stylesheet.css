@@ -42,6 +42,7 @@ body{
     width: 100%;
 }
 
+
 button.basic{
     font-size: 12px;
     font-weight: 600;
@@ -522,46 +523,186 @@ footer .copyright{
 
 /*Men's Page Styling /
 /*Adding a back ground image and centering the homepage intro section*/
+
+
 .Mencontent{
     padding-top: 60px;
-      background-image: url('../Pictures/MenHomepage.jpg');
-       height: 90vh;
-       width: 100%;
-       background-size: cover;
-       background-position: top 25% right 0;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: center;
-
+    background-image: url('../Pictures/Homepagemen.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 
-/*Native Page Styling /
-/*Adding a back ground image and centering the homepage intro section*/
-.Nativepage{
+.text-content {
+    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: add rounded corners */
+    margin-bottom: 20px; /* Optional: add margin to separate from button */
+}
+
+
+.Mencontent h3,
+.Mencontent h4,
+.Mencontent h5,
+.Mencontent p{
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 25x;
+}
+
+.Mencontent button {
+    background-color: #d28315;
+    border: none;
+    color: rgb(255, 253, 253);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+
+.Mencollections {
+    text-align: center;
+    font-size: 85px;
+    padding-top: 30px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #c9690e;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%; 
+    margin: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color: #0c0c0c;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+}
+
+.product h3,
+.product h6 {
+    margin: 5px 0;
+}
+
+.product-stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.product:hover .price {
+    color: white; /* Change discount sale text color to white on hover */
+}
+.product-info .price {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.product:hover .cart-icon {
+    color: white; /* Change icon color to white once it is selected hover */
+}
+
+/*styling for native*/
+
+.Nativecontent {
     padding-top: 60px;
-      background-image: url('../Pictures/Native\ and\ sun.jpg');
-       height: 90vh;
-       width: 100%;
-       background-size: cover;
-       background-position: top 25% right 0;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: center;
-
+    background-image: url('../Pictures/Native and sun.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-
-
-
-.content{
-	color:black;
-	position:relative;
-	text-align:center;
-    font-weight: 400px;
+.text-content {
+    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: add rounded corners */
+    margin-bottom: 20px; /* Optional: add margin to separate from button */
 }
+
+.Nativecontent h3,
+.Nativecontent h4,
+.Nativecontent h5,
+.Nativecontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 25x;
+}
+
+.Nativecontent button {
+    background-color: #d28315;
+    border: none;
+    color: rgb(255, 253, 253);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 
 #gamecontainer {
     text-align: center;
@@ -585,3 +726,4 @@ footer .copyright{
     border-radius: 16px;
     cursor: pointer;
 }
+
