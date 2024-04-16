@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<meta charset="UTF-8">
 			<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+			<script src="../Javascript/store.js" defer></script>
 			<link  href="../CSS/Stylesheet.css" rel="stylesheet"><!--link to Stylesheet-->
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts-->
@@ -27,6 +28,7 @@
 					<li><a href="../children/children.html">Kids</a></li>
 					<li><a href="../Native/Native.html">Native</a></li>
 					<li><a href="../Contactus/contactus.html">Contact</a></li>
+			
 				</ul>
 			</div>
 		</section>
@@ -50,7 +52,7 @@
 
 		<section class="product-container">
 			<div class="product">
-				<img src="../Pictures/pictures for men/man1-min-min.jpg" alt="Black Jacket">
+				<img src="../Pictures/pictures for men/man1-min-min.jpg" alt="Black Jacket" onclick="showMoreInfo(1)">
 				<div class="product-info">
 					<h3>Black Jacket</h3>
 					<h4>Summer glow Black and Green Shirts</h4>
@@ -63,11 +65,34 @@
 					</div>
 					<p class="price">Discount sale $80</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">Purchase</button>
+					<button class="more-info-btn" type="button" onclick="showMoreInfo(1)">More Info</button>
+					<p id="product1-info" class="hidden">This product will be delivered in 1 to 3 weeks, kindly click on purchase and fill the form to Purchase</p> 
+			
+					<script>
+						// Function to show more information or purchase information for each product
+						function showInfo(productId) {
+							const info = document.getElementById(`product${productId}-info`);
+							if (info) {
+								info.classList.remove('hidden'); // Remove the 'hidden' class to show the info
+								// Automatically hide the info after 5 seconds (5000 milliseconds)
+								setTimeout(function() {
+									info.classList.add('hidden'); // Add back the 'hidden' class to hide the info
+								}, 5000); // 5000 milliseconds = 5 seconds
+							}
+						}
+					</script>
 				</div>
 			</div>
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/man9-min-min.jpg" alt="Black leather">
+				<img src="../Pictures/pictures for men/man9-min-min.jpg" alt="Black leather" >
 				<div class="product-info">
 					<h3>Black leather Jacket</h3>
 					<h4> Black sublime Jacket</h4>
@@ -80,8 +105,18 @@
 					</div>
 					<p class="price">Discount sale $80</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="0" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					
+					<button class="add-to-cart-btn" type="button">Purchase</button>
+					<button class="more-info-btn" type="button" onclick="showMoreInfo">More Info</button>
 				</div>
 			</div>
+		</div>
+				
 
 			<div class="product">
 				<img src="../Pictures/pictures for men/Bluesuit-min-min.jpg" alt="Bluesuit">
@@ -97,6 +132,14 @@
 					</div>
 					<p class="price">Discount sale $180</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -115,6 +158,14 @@
 					</div>
 					<p class="price">Discount sale $80</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -132,6 +183,14 @@
 					</div>
 					<p class="price">Discount sale $120</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -149,6 +208,14 @@
 					</div>
 					<p class="price"> $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -166,6 +233,14 @@
 					</div>
 					<p class="price">Discount sale $110</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -183,6 +258,14 @@
 					</div>
 					<p class="price">Discount sale $260</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -201,6 +284,14 @@
 					</div>
 					<p class="price">Discount sale $60</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -218,6 +309,14 @@
 					</div>
 					<p class="price">Discount sale $160</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -236,6 +335,14 @@
 					</div>
 					<p class="price">Discount sale $60</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -254,6 +361,14 @@
 					</div>
 					<p class="price">Discount sale $280</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -273,6 +388,14 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -292,6 +415,14 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -310,6 +441,14 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -328,6 +467,14 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -346,6 +493,14 @@
 					</div>
 					<p class="price"> $70</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
 
@@ -363,19 +518,16 @@
 					</div>
 					<p class="price"> $70</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min ="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="add-to-cart-btn" type="button">Add to Cart</button>
+					<button class="more-info-btn" type="button">More Info</button>
+				</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
 
 		</section>
 
