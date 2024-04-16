@@ -52,7 +52,7 @@
 
 		<section class="product-container">
 			<div class="product">
-				<img src="../Pictures/pictures for men/man1-min-min.jpg" alt="Black Jacket" onclick="showMoreInfo(1)">
+				<img src="../Pictures/pictures for men/man1-min-min.jpg" alt="Black Jacket">
 				<div class="product-info">
 					<h3>Black Jacket</h3>
 					<h4>Summer glow Black and Green Shirts</h4>
@@ -71,26 +71,19 @@
 						<button class="quantity-plus-button">+</button>
 					</div>
 
-					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">Purchase</button>
-					<button class="more-info-btn" type="button" onclick="showMoreInfo(1)">More Info</button>
-					<p id="product1-info" class="hidden">This product will be delivered in 1 to 3 weeks, kindly click on purchase and fill the form to Purchase</p> 
-			
+					<button class="more-info-btn" type="button" onclick="myFunction()"> Purchase</button>
+
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
 					<script>
-						// Function to show more information or purchase information for each product
-						function showInfo(productId) {
-							const info = document.getElementById(`product${productId}-info`);
-							if (info) {
-								info.classList.remove('hidden'); // Remove the 'hidden' class to show the info
-								// Automatically hide the info after 5 seconds (5000 milliseconds)
-								setTimeout(function() {
-									info.classList.add('hidden'); // Add back the 'hidden' class to hide the info
-								}, 5000); // 5000 milliseconds = 5 seconds
-							}
+					function myFunction() {
+						alert("Orders coming soon, please click on more info to fill the form and be on the waiting list");
 						}
-					</script>
+						</script>	
 				</div>
 			</div>
-
+		
+	
 			<div class="product">
 				<img src="../Pictures/pictures for men/man9-min-min.jpg" alt="Black leather" >
 				<div class="product-info">
@@ -103,16 +96,24 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<p class="price">Discount sale $80</p>
+					<p class="price">Discount sale $120</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
 					<div class="quantity-controls">
 						<button class="quantity-minus-button">-</button>
-						<input class="cart-input" type="number" value="0" min="0">
+						<input class="cart-input" type="number" value="" min="0">
 						<button class="quantity-plus-button">+</button>
 					</div>
-					
-					<button class="add-to-cart-btn" type="button">Purchase</button>
-					<button class="more-info-btn" type="button" onclick="showMoreInfo">More Info</button>
+
+					<button class="more-info-btn" type="button" onclick="myFunction()"> Purchase</button>
+
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
+					<script>
+					function myFunction() {
+						alert("Orders coming soon, please click on more info to fill the form and be on the waiting list");
+						}
+						</script>	
+
 				</div>
 			</div>
 		</div>
@@ -137,12 +138,20 @@
 						<input class="cart-input" type="number" value="" min="0">
 						<button class="quantity-plus-button">+</button>
 					</div>
-					<button class="add-to-cart-btn" type="button">Add to Cart</button>
-					<button class="more-info-btn" type="button">More Info</button>
-				</div>
+
+					<button class="more-info-btn" type="button" onclick="myFunction()"> Purchase</button>
+
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
+					<script>
+					function myFunction() {
+						alert("Orders coming soon, please click on more info to fill the form and be on the waiting list");
+						}
+						</script>	
 				</div>
 			</div>
-
+		</div>
+				
 
 			<div class="product">
 				<img src="../Pictures/pictures for men/Jean jacket-min-min.jpg" alt="Jean jacket">

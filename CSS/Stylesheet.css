@@ -732,7 +732,7 @@ footer .copyright{
     padding: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 16%; 
+    width: 14%; 
     margin: 0 10px 10px 10px;
     box-sizing: border-box;
     color: #0c0c0c;
@@ -740,7 +740,7 @@ footer .copyright{
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 50%;
     background-color: white;
     color: white;
 }
@@ -825,7 +825,7 @@ footer .copyright{
 /* Style for the minus and plus buttons */
 .quantity-controls button {
 
-    padding: 5px 10px; /* Adjust padding to control button size */
+    padding: 2px 5px; /* Adjust padding to control button size */
     margin: 0 5px; /* Add margin to separate buttons */
     border: 1px solid #ccc; /* Add a border */
     border-radius: 4px; /* Add border radius for rounded corners */
@@ -834,11 +834,11 @@ footer .copyright{
 
 }
 
-/* Style for the Add to Cart button */
+/* Style for the purchase button  and more info button */
 .add-to-cart-btn,
 .more-info-btn {
-    padding: 5px 10px; /* Adjust padding to control button size */
-    margin-top: 10px; /* Add margin to separate buttons from other content */
+    padding: 2px 5px; /* Adjust padding to control button size */
+    margin-top: 5px; /* Add margin to separate buttons from other content */
     border: 1px solid #ceaf23; /* Add a border with primary color */
     border-radius: 4px; /* Add border radius for rounded corners */
     background-color: #ae911d; /* Set background color to primary color */
@@ -846,17 +846,12 @@ footer .copyright{
     cursor: pointer; /* Add cursor pointer for interaction */
 }
 
-/* Hover effect for the Add to Cart and More Info buttons */
+/* hover effect for purchase and info button */
 .add-to-cart-btn:hover,
 .more-info-btn:hover {
-    background-color: #0056b3; /* Darken background color on hover */
-    border-color: #0056b3; /* Darken border color on hover */
+    background-color: #0056b3; /* to put h color on hover */
+    border-color: #0056b3; /* to put blue color color on hover */
 }
-
-.hidden {
-    display: none;
-}
-
 
 #product1-info{
 
@@ -897,7 +892,7 @@ footer .copyright{
 
 
 
-/*styling for native page*/
+/*styling for native page */
 
 
 
@@ -930,6 +925,8 @@ footer .copyright{
     border-radius: 8px;
 }
 
+
+/*styling for native page*/
 
 #gamecontainer {
     text-align: center;
