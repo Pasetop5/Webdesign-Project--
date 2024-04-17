@@ -1,131 +1,399 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<meta charset="UTF-8">
-			<meta name ="viewport" content="width=device-width,initial-scale=1.0">
-			<link  href="../CSS/Stylesheet.css" rel="stylesheet"><!--link to Stylesheet-->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts-->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-			<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script><!--fontawesome-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media icons-->
-	<section class="header">
-		<a href="../Home/index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a>
-			<div>
-				<ul id="navbar">
-					<li><a class="active" href="../Home/index.html">Home</a></li>
-					<li><a href="../Men/Men.html">Men</a></li>
-					<li><a href="../Women/Women.html">Women</a></li>
-					<li><a href="../children/children.html">Kids</a></li>
-					<li><a href="../Native/Native.html">Native</a></li>
-					<li><a href="../Contactus/contactus.html">Contact</a></li>
-				</ul>
-			</div>
-		</section>
 
-	<section class="Kids Page">	
-		<h4>Great Shopping Experience for Men</h4>
-		<h2>Super Value Deals</h2>
-		<h1>On all items</h1>
-		<p>Save more with deals of upto 60% off.</p>
-		<button>Shop Now</button>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="../CSS/Stylesheet.css" rel="stylesheet"><!--link to Stylesheet-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script><!--fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<!-- font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--social media icons-->
+</head>
+
+<body>
+	<title>Kuvira-Kids</title>
+	<section id="header">
+		<a href="../Home/index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a>
+		<div>
+			<ul id="navbar">
+				<li><a href="../Home/index.html">Home</a></li>
+				<li><a href="../Men/Men.html">Men</a></li>
+				<li><a href="../Women/Women.html">Women</a></li>
+				<li><a href="../children/children.html">Kids</a></li>
+				<li><a href="../Native/Native.html">Native</a></li>
+				<li><a href="../Contactus/contactus.html">Contact</a></li>
+			</ul>
+		</div>
 	</section>
 
-</body>
-</html>
+	<br>
 
-<section id="newsletter">
-	<div class="newstext">
-		<h4>Sign up for our newsletter</h4>
-		<p>Get updates on <span>offers</span> and keep up with our collections.</p>
+	<section class="KidsPage">
+		<div class="text-content">
+			<h3>Great Shopping Experience for Kids</h3>
+			<h4>Super Value Deals</h4>
+			<h5>On all items</h5>
+			<p>Save more with deals of upto 60% off.</p>
+		</div>
+		<button type="button">Shop Now</button>
+	</section>
+
+	<div class="KidsWear">
+		<h5> Kid's clothing </h5>
 	</div>
-	
-	<div class="homeform">
-		<input type="text" placeholder="Email Address">
-		<button class="basic">Sign Up</button>
-	</div>
-</section>
-
-<section id = "Kid'sclothes">
-	<figure class="image-item">
-	   <img src="../Pictures/Boy7.jpg" alt="Kid">
-	   <figcaption class="Kid's_Item"> Blazzing green Jacket</figcaption>
-	   <button class="add-to-cart" onclick="addToCart('Blazzing green Jacket')">Add to Cart</button>
-   </figure>
-   <!-- Add more image items here -->
-</div>
-
-<div class="cart">
-   <h2>Shopping Items</h2>
-   <ul id="cart-items"></ul>
-   <button onclick="checkout()">Checkout</button>
-</div>
-
-
-
-
-
-
-
-
-</section>
-
-
-<footer class="section-p1">
-	<div class="p1">
-		<img id="logo" src="../Images/Floral Line Art Monogram Round Logo (4).png" alt="logo">
-		<h4>Contact</h4>
-		<p><strong>Address</strong>:1234Nairobi</p>
-		<p><strong>Phone</strong>023454556767</p>
-		<p><strong>Hours</strong>9:00-21:00,Mon-Sun</p>
-		<div class="socials">
-			<h4>Find us on Socials</h4>
-			<div class="icons">
-				<i class="fa fa-facebook-official"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-youtube"></i>
+	<br>
+	<section class="Kids-container">
+		<div class="Kids">
+			<img src="../Pictures/Boy1-min.jpg" alt="Black Jacket">
+			<div class="Kids-info">
+				<h3>Green long slves</h3>
+				<h4>Summer Green long slves Shirts</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
 			</div>
 		</div>
-	</div>
 
-	<div class="p1">
-		<h4>Useful Links</h4>
-		<a href="../Home/index.html">Home</a>
-		<a href="../Men/Men.html">Men</a>
-		<a href="../Women/Women.html">Women</a>
-		<a href="../Native/Native.html">Native</a>
-		<a href="../children/children.html">Kids</a>
-		<a href="../Contactus/contactus.html">Contact Us</a>
-	</div>
+		<div class="Kids">
+			<img src="../Pictures/Girl1.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Black leather Jacket</h3>
+				<h4> Black sublime Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
 
-	<div class="p1">
-		<h4>My Account</h4>
-		<a href="#">Sign In</a>
-		<a href="../Contactus/contactus.html">Help</a>
-		<a href="../Contactus/contactus.html">Report A problem</a>
-	</div>
+		<div class="Kids">
+			<img src="../Pictures/Boy2.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
 
-	<div class="homepagespay">
-		<h4>Payment Options</h4>
-		<p>Secured Payment Gateways</p>
-		<div class="footrow">
-			<img src="../Images/electronic-payments-2570939_640.jpg" alt="visa">
-			<img src="../Images/master-card-2962135_640.png" alt="mastercard">
-			<img src="../Images/credit-6598773_640.png" alt="American Express">
-		</div>	
-	</div>
+		<div class="Kids">
+			<img src="../Pictures/Girl2.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
 
-	<div class="copyright">
-		<p>Kuvira Fashion © 2024.
-		All Rights Reserved.</p>
-	</div>
+		<div class="Kids">
+			<img src="../Pictures/boy3.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
 
-</footer>
+		<div class="Kids">
+			<img src="../Pictures/Girl3.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="product-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
 
+		<div class="Kids">
+			<img src="../Pictures/Boy4.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Girl5.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="product-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Boy6.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Girl7.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Boy8.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Girl8.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Boy9.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+
+		<div class="Kids">
+			<img src="../Pictures/Girl9.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+
+		<div class="Kids">
+			<img src="../Pictures/Boys.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+
+		<div class="Kids">
+			<img src="../Pictures/Girl10.jpg" alt="Black leather">
+			<div class="Kids-info">
+				<h3>Red Jacket</h3>
+				<h4> Red winter Jacket</h4>
+				<div class="Kids-stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale $80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<section id="newsletter">
+		<div class="newstext">
+			<h4>Sign up for our newsletter</h4>
+			<p>Get updates on <span>offers</span> and keep up with our collections.</p>
+		</div>
+
+		<div class="homeform">
+			<input type="text" placeholder="Email Address">
+			<button class="basic">Sign Up</button>
+		</div>
+	</section>
+
+
+
+	<footer class="section-p1">
+		<div class="p1">
+			<img id="logo" src="../Images/Floral Line Art Monogram Round Logo (4).png" alt="logo">
+			<h4>Contact</h4>
+			<p><strong>Address</strong>:1234Nairobi</p>
+			<p><strong>Phone</strong>023454556767</p>
+			<p><strong>Hours</strong>9:00-21:00,Mon-Sun</p>
+			<div class="socials">
+				<h4>Find us on Socials</h4>
+				<div class="icons">
+					<i class="fa fa-facebook-official"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="p1">
+			<h4>Useful Links</h4>
+			<a href="#">Home</a>
+			<a href="#">Men</a>
+			<a href="#">Women</a>
+			<a href="#">Native</a>
+			<a href="#">Kids</a>
+			<a href="#">Contact Us</a>
+		</div>
+
+		<div class="p1">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">Help</a>
+			<a href="#">Report A problem</a>
+		</div>
+
+		<div class="homepagespay">
+			<h4>Payment Options</h4>
+			<p>Secured Payment Gateways</p>
+			<div class="footrow">
+				<img src="../Images/electronic-payments-2570939_640.jpg" alt="visa">
+				<img src="../Images/master-card-2962135_640.png" alt="mastercard">
+				<img src="../Images/credit-6598773_640.png" alt="American Express">
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>Kuvira Fashion © 2024.
+				All Rights Reserved.</p>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
