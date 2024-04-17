@@ -685,8 +685,8 @@ footer .copyright{
 .text-content {
     background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
     padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    border-radius: 10px; /* add rounded corners */
+    margin-bottom: 20px; /* add margin to separate from button */
 }
 
 /*styling for the class men content*/
@@ -710,14 +710,15 @@ footer .copyright{
     display: inline-block;
     font-size: 16pxpx;
     margin: 4px 2px;
-    cursor: pointer;
     border-radius: 8px;
 }
 
-.Mencollections {
+.Mencollections h5 {
     text-align: center;
-    font-size: 110px;
+    font-size: 90px;
     padding-top: 30px;
+
+    
 }
 
 .product-container {
@@ -812,7 +813,7 @@ footer .copyright{
 #product1-info:hover{
     color: white;
     transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
-    transform: scale(1.03); /* Scale up slightly on hover */
+    transform: scale(1.03); /* Scale up  on hover */
 }
 
 
@@ -825,25 +826,26 @@ footer .copyright{
 /* Style for the minus and plus buttons */
 .quantity-controls button {
 
-    padding: 2px 5px; /* Adjust padding to control button size */
+    padding: 2px 5px; /* to adjust padding to control button size */
     margin: 0 5px; /* Add margin to separate buttons */
     border: 1px solid #ccc; /* Add a border */
-    border-radius: 4px; /* Add border radius for rounded corners */
-    background-color: transparent; /* Make background transparent */
-    cursor: pointer; /* Add cursor pointer for interaction */
+    border-radius: 4px; /* for radius for rounded corners */
+    background-color: transparent; /* to make background transparent */
+    cursor: pointer; /* to cursor pointer for interaction */
 
 }
 
 /* Style for the purchase button  and more info button */
 .add-to-cart-btn,
 .more-info-btn {
-    padding: 2px 5px; /* Adjust padding to control button size */
+    padding: 2px 5px; /* for adjusting the padding padding to control button size */
     margin-top: 5px; /* Add margin to separate buttons from other content */
     border: 1px solid #ceaf23; /* Add a border with primary color */
     border-radius: 4px; /* Add border radius for rounded corners */
     background-color: #ae911d; /* Set background color to primary color */
     color: #fff; /* Set text color to white */
     cursor: pointer; /* Add cursor pointer for interaction */
+   
 }
 
 /* hover effect for purchase and info button */
@@ -886,8 +888,8 @@ footer .copyright{
 .text-content {
     background-color: rgba(255, 255, 255, 0.365); /* Add background color for text content */
     padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    border-radius: 10px; /* add rounded corners */
+    margin-bottom: 20px; /* add margin to separate from button */
 }
 
 
@@ -928,12 +930,15 @@ footer .copyright{
 
 /*styling for native page*/
 
+
 #gamecontainer {
     text-align: center;
+
 }
 
 #gamelayer {
-    border: 3px solid;
+    border: 6px solid;
+    border-color: #0056b3;
 }
 
 #scoretext {
@@ -949,6 +954,7 @@ footer .copyright{
     border: 5px solid;
     border-radius: 16px;
     cursor: pointer;
+    background-color: lightskyblue;
 }
 
 /*Work by Chris*/
