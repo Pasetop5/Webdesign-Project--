@@ -591,6 +591,7 @@ footer .copyright {
 
 .cform {
     grid-area: form;
+    
 }
 
 .cinfo {
@@ -631,6 +632,8 @@ footer .copyright {
 
 .cmap {
     grid-area: map;
+    
+
 }
 
 .fcontainer {
@@ -652,7 +655,61 @@ footer .copyright {
 
 }
 
+.formbox{
+    position: relative;
+    width: 100%;
+}
 
+.formbox .row1 .row2{
+    display: flex;
+    gap: 20px;
+}
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%; 
+}
+
+.formbox .row2.chatbox{
+    width: 100%;
+
+}
+
+.chatbox span{
+    color: #222;
+    margin-top: 10px;
+    margin-bottom:5px ;
+    font-weight: 500;
+}
+ .chatbox input{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+ }
+
+ .chatbox textarea{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;  
+ }
+
+ .chatbox input[type="submit"]
+ {
+    background:chocolate ;
+    color: #222;
+    border: none;
+    font-size: 14px;
+    max-width: 120px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 15px;
+ }
 /*Work by Tope*/
 
 /*Men's Page Styling /
@@ -682,7 +739,6 @@ footer .copyright {
     /*to add box shadow*/
 }
 
-
 .text-content {
     background-color: rgba(255, 255, 255, 0.365);
     /* Add white background color for text content */
@@ -694,7 +750,8 @@ footer .copyright {
     /* Optional: add margin to separate from button */
 }
 
-/*styling for the class men content*/
+
+.Mencontent h2,
 .Mencontent h3,
 .Mencontent h4,
 .Mencontent h5,
@@ -714,17 +771,24 @@ footer .copyright {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16pxpx;
+    font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
     border-radius: 8px;
 }
 
-.Mencollections {
+
+
+
+.Mencollections h5 {
     text-align: center;
-    font-size: 110px;
+    font-size: 90px;
     padding-top: 30px;
-}
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 
 .product-container {
     display: flex;
@@ -746,8 +810,9 @@ footer .copyright {
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 50%;
     background-color: white;
+    color: white;
 }
 
 .product h3,
@@ -818,11 +883,140 @@ footer .copyright {
     /* Change icon color to white once it is selected hover */
 }
 
+
+#product1-info{
+    color: white;
+}
+
+
+/*styling for  hover texts*/
+#product1-info:hover{
+    color: white;
+    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03); /* Scale up  on hover */
+}
+
+
+
+/* Style for the quantity controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the minus and plus buttons */
+.quantity-controls button {
+
+    padding: 2px 5px; /* to adjust padding to control button size */
+    margin: 0 5px; /* Add margin to separate buttons */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* for radius for rounded corners */
+    background-color: transparent; /* to make background transparent */
+    cursor: pointer; 
+
+}
+
+/* Style for the purchase button  and more info button */
+.add-to-cart-btn,
+.more-info-btn {
+    padding: 2px 5px; /* for adjusting the padding padding to control button size */
+    margin-top: 5px; /* Add margin to separate buttons from other content */
+    border: 1px solid #ceaf23; /* Add a border with  an put color on it*/
+    border-radius: 4px; /* Add border radius for a litle rectangle that has circular edges */
+    background-color: #ae911d; /* Set background color*/
+    color: #fff; /* Set text color to white */
+    cursor: pointer; 
+   
+}
+
+/* hover effect for purchase and info button */
+.add-to-cart-btn:hover,
+.more-info-btn:hover {
+    background-color: #0056b3; /* to put a color on hover */
+    border-color: #0056b3; /* to put blue color color on hover */
+}
+
+#product1-info{
+
+    color: #0c0c0c;
+}
+
+#product1-info :hover{
+    color: white
+
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .Mencontent {
+      padding-top: 10%; /*  padding for smaller screens */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .text-content {
+      padding: 10px; /* padding for smaller screens */
+      margin-bottom: 10px; /* margin for smaller screens */
+    }
+  
+    .Mencontent h2,
+    .Mencontent h3,
+    .Mencontent h4,
+    .Mencontent h5,
+    .Mencontent p {
+      font-size: 16px; /*  font size for smaller screens */
+    }
+  
+    .Mencontent button {
+      padding: 10px 20px; /*  padding for smaller screens */
+      font-size: 14px; /*  font size for smaller screens */
+      margin: 2px 1px; /* margin for smaller screens */
+    }
+  }
+
+/* For screens that are  than 768px (phones) */
+
+
+@media (max-width: 767px) {
+    .Mencollections h5 {
+      font-size: 48px;
+    }
+  
+    .product {
+      width: 45%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens between 768px and 1023px (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .Mencollections h5 {
+      font-size: 64px;
+    }
+  
+    .product {
+      width: 30%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens 1024px and larger (desktops) */
+  @media (min-width: 1024px) {
+    .Mencollections h5 {
+      font-size: 90px;
+    }
+  
+    .product {
+      width: 20%;
+      margin: 0 10px 10px 10px;
+    }
+  }
+
 /*styling for native*/
 
 .Nativecontent {
     padding-top: 60px;
-    background-image: url('../Pictures/Native and sun.jpg');
+    background-image: url('../Pictures/Native_and_sun-min.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -850,14 +1044,27 @@ footer .copyright {
     /* Optional: add margin to separate from button */
 }
 
+
+/*styling for native page */
+
+.Nativecollection h5 {
+
+    text-align: center;
+    font-size: 90px;
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.Nativecontent h2,
 .Nativecontent h3,
 .Nativecontent h4,
-.Nativecontent h5,
 .Nativecontent p {
     margin-right: 20px;
     margin: 0;
     color: black;
-    font-size: 25x;
+    font-size: 30px;
 }
 
 .Nativecontent button {
@@ -875,12 +1082,65 @@ footer .copyright {
 }
 
 
+
+/* Correcting Font Sizes in Existing CSS */
+.Nativecollection h5 {
+    text-align: center;
+    font-size: 36px; /* Adjusted for better scaling on all devices */
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Nativecontent h3,
+.Nativecontent h4,
+.Nativecontent h5,
+.Nativecontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 25px; /* Corrected from '25x' to '25px' */
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .Nativecontent {
+        padding-top: 30px; /* Less padding on top for smaller screens */
+        height: auto; /* Height becomes auto to avoid cutting off content */
+        padding: 10px; /* padding around the content */
+    }
+
+    .text-content {
+        padding: 10px; /* Smaller padding in text content for smaller screens */
+        margin-bottom: 10px; /* Smaller margin below the text content */
+    }
+
+    .Nativecontent h2,
+    .Nativecontent h3,
+    .Nativecontent h4,
+    .Nativecontent p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .Nativecontent button {
+        padding: 10px 20px; /* reduced padding */
+        font-size: 14px; /* smaller font sizes */
+        margin: 4px 2px; /* reducing the margin */
+    }
+}
+
+/*styling for the game */
+
 #gamecontainer {
     text-align: center;
 }
 
 #gamelayer {
-    border: 3px solid;
+    border: 6px solid;
+    border-color: #0056b3;
 }
 
 #scoretext {
@@ -896,6 +1156,7 @@ footer .copyright {
     border: 5px solid;
     border-radius: 16px;
     cursor: pointer;
+    background-color: lightskyblue;
 }
 
 /*Work by Chris*/
