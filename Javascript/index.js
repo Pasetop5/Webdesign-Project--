@@ -1,3 +1,5 @@
+/* Snake game for the group by Tope*/
+
 // Selecting the canvas element and its context
 const gamelayer = document.querySelector("#gamelayer");
 const ctx = gamelayer.getContext("2d");
@@ -178,4 +180,22 @@ function resetGame() {
         {x: 0, y: 0},
     ];
     gamestart();
+}
+
+/*Work by Sylvia*/
+/*Making the outdent icon on the media tag clickable to show the navigation bar*/
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav=document.getElementById('navbar');
+
+if (bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+
+if (close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
 }

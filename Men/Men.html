@@ -3,24 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<meta charset="UTF-8">
-			<meta name ="viewport" content="width=device-width,initial-scale=1.0">
 			<link  href="../CSS/Stylesheet.css" rel="stylesheet"><!--link to Stylesheet-->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts-->
-			<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+			<script src="../Javascript/store.js" defer></script> <!-- link to javascript-->
+			<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> <!-- google fonts -->
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Google fonts-->
 			<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 			<script src="https://kit.fontawesome.com/yourcode.js" > </script><!--fontawesome-->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- font awesome-->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media icons-->
-		<title>Kuvira-Men</title>
+		<title> Kuvira_Men</title>
 	</head>
 	<body>
 		<section id="header">
-			<a href="../Home/index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a>
+			<a href="../Home/index.html"><img id="logo" src="../Pictures/kuviralogo.png" alt="Logo top"></a> <!-- Inserting the logo-->
 			<div>
-				<ul id="navbar">
+				<ul id="navbar"> <!-- Creating the navigation bar-->
 					<li><a href="../Home/index.html">Home</a></li>
 					<li><a href="../Men/Men.html">Men</a></li>
 					<li><a href="../Women/Women.html">Women</a></li>
@@ -31,26 +29,27 @@
 			</div>
 		</section>
 
+		</section>
 		<section class="Mencontent">
 			<div class="text-content">
-				<h3>Great Shopping Experience for Men</h3>
-				<h4>Super Value Deals</h4>
-				<h5>On all items</h5>
+				<h2>Great Shopping Experience for Men</h2>
+				<h3>Super Value Deals</h3>
+				<h4>On all items</h4>
 				<p>Save more with deals of upto 60% off.</p>
 			</div>
 			<button type="button">Shop Now</button>
 		</section>
-
 		<br>
 
-		<div class ="Mencollections">
-		<h5> Men's Summer Collection</h5>	
+
+		<div class="Mencollections" id="Menside">
+			<h5> Kuvira's Men's Summer Collection</h5>	
 		</div>
 		<br> 
 
 		<section class="product-container">
 			<div class="product">
-				<img src="../Pictures/pictures for men/man1-min-min.jpg" alt="Black Jacket">
+				<img src="../Pictures/man1-min-min.jpg" alt="Black Jacket">
 				<div class="product-info">
 					<h3>Black Jacket</h3>
 					<h4>Summer glow Black and Green Shirts</h4>
@@ -63,11 +62,19 @@
 					</div>
 					<p class="price">Discount sale $80</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-				</div>
-			</div>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 
+			</div>
+			</div>
+	
 			<div class="product">
-				<img src="../Pictures/pictures for men/man9-min-min.jpg" alt="Black leather">
+				<img src="../Pictures/man9-min-min.jpg" alt="Black leather" >
 				<div class="product-info">
 					<h3>Black leather Jacket</h3>
 					<h4> Black sublime Jacket</h4>
@@ -78,13 +85,22 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<p class="price">Discount sale $80</p>
+					<p class="price">Discount sale $120</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-				</div>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
+			</div>
 			</div>
 
+
 			<div class="product">
-				<img src="../Pictures/pictures for men/Bluesuit-min-min.jpg" alt="Bluesuit">
+				<img src="../Pictures/Bluesuit-min-min.jpg" alt="Bluesuit">
 				<div class="product-info">
 					<h3> Bluesuit</h3>
 					<h4>Stunning Bluesuit </h4>
@@ -97,12 +113,20 @@
 					</div>
 					<p class="price">Discount sale $180</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-				</div>
-			</div>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 
+			</div>
+		</div>
+				
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Jean jacket-min-min.jpg" alt="Jean jacket">
+				<img src="../Pictures/Jean_jacket-min-min.jpg" alt="Jean jacket">
 				<div class="product-info">
 					<h3> Jean grey Coat</h3>
 					<h4>ravising grey jacket</h4>
@@ -115,11 +139,20 @@
 					</div>
 					<p class="price">Discount sale $80</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-				</div>
+					<div class="quantity-controls">
+							<button class="quantity-minus-button">-</button>
+							<input class="cart-input" type="number" value="" min="0">
+							<button class="quantity-plus-button">+</button>
+						</div>
+						<button class="more-info-btn" type="button" > Purchase</button>
+						<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+				
 			</div>
+			</div>
+			
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Floral shirt-min-min.jpg" alt="Cream jacket">
+				<img src="../Pictures/Floral_shirt-min-min.jpg" alt="Cream jacket">
 				<div class="product-info">
 					<h3> Stylish beach shirt</h3>
 					<h4>Flower shirt</h4>
@@ -130,13 +163,21 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<p class="price">Discount sale $80</p>
+					<p class="price">Discount sale $120</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Green coat-min-min.jpg" alt="Green coat">
+				<img src="../Pictures/Green_coat-min-min.jpg" alt="Green coat">
 				<div class="product-info">
 					<h3> Green Superhero Coat</h3>
 					<h4>Fly like a Man</h4>
@@ -147,13 +188,22 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<p class="price">Discount sale $80</p>
+					<p class="price"> $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
 				</div>
-			</div>
+				</div>
+			
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Bluefull-jean-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Bluefull-jean-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Full Blue jeans</h3>
 					<h4>Superfly Blue</h4>
@@ -166,13 +216,22 @@
 					</div>
 					<p class="price">Discount sale $110</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
 				</div>
-			</div>
+				</div>
+			
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Suit-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Suit-min-min.jpg" alt="full jeans">
 				<div class="product-info">
-					<h3> BGrey Suit</h3>
+					<h3> Grey Suit</h3>
 					<h4>Superfly grey Suit</h4>
 					<div class="product-stars">
 						<i class="fas fa-star"></i>
@@ -183,15 +242,24 @@
 					</div>
 					<p class="price">Discount sale $260</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+
+					</div>
 				</div>
-			</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Short sleave black tees-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Short_sleave_black_tees-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Black tee</h3>
-					<h4>Black tee</h4>
+					<h4> BEautiful black tee</h4>
 					<div class="product-stars">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -201,14 +269,22 @@
 					</div>
 					<p class="price">Discount sale $60</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Black shirt-min-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Black_shirt-min-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Sky blue shirt</h3>
-					<h4>Sky blue shirt </h4>
+					<h4>Stunning blue shirt </h4>
 					<div class="product-stars">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -218,12 +294,20 @@
 					</div>
 					<p class="price">Discount sale $160</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/FUll black-min-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/FUll_black-min-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Full black Overall</h3>
 					<h4>Inspirational Dancehall</h4>
@@ -236,15 +320,23 @@
 					</div>
 					<p class="price">Discount sale $60</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+							<button class="quantity-minus-button">-</button>
+							<input class="cart-input" type="number" value="" min="0">
+							<button class="quantity-plus-button">+</button>
+						</div>
+						<button class="more-info-btn" type="button"> Purchase</button>
+						<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Renaissance Overall-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Renaissance_Overall-min-min.jpg" alt="full jeans">
 				<div class="product-info">
-					<h3> Full black Overall</h3>
-					<h4>Inspirational Dancehall</h4>
+					<h3> Corporate Tees</h3>
+					<h4> Stylish coporate Shirts</h4>
 					<div class="product-stars">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -254,13 +346,21 @@
 					</div>
 					<p class="price">Discount sale $280</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Drapped_brown suit-min-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/Drapped_brown_suit-min-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Brown superfly Suit</h3>
 					<h4>Brown slim Suit</h4>
@@ -273,13 +373,21 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/double_Jean-min-min-min.jpg" alt="full jeans">
+				<img src="../Pictures/double_Jean-min-min-min.jpg" alt="full jeans">
 				<div class="product-info">
 					<h3> Brown superfly Suit</h3>
 					<h4>Brown slim Suit</h4>
@@ -292,12 +400,20 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/white-tee-min-min.jpg" alt="White Tee">
+				<img src="../Pictures/white-tee-min-min.jpg" alt="White Tee">
 				<div class="product-info">
 					<h3> White Roundneck</h3>
 					<h4>Exquisite white </h4>
@@ -310,12 +426,20 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Whitesuit-min-min-min.jpg" alt="White suit">
+				<img src="../Pictures/Whitesuit-min-min-min.jpg" alt="White suit">
 				<div class="product-info">
 					<h3> Whitesuit</h3>
 					<h4> Full White suit </h4>
@@ -328,12 +452,20 @@
 					</div>
 					<p class="price">Discount sale $150</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
+			
 
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Yellow hoodie-min-min-min.jpeg" alt="Yellow hoodie">
+				<img src="../Pictures/Yellow_hoodie-min-min-min.jpeg" alt="Yellow hoodie">
 				<div class="product-info">
 					<h3>Yellow Hoodies</h3>
 					<h4>Pretty Yellow Hoodie</h4>
@@ -346,11 +478,18 @@
 					</div>
 					<p class="price"> $70</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button"> Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
+				</div>
 
 			<div class="product">
-				<img src="../Pictures/pictures for men/Grey_Jacket.jpg" alt="Yellow hoodie">
+				<img src="../Pictures/Grey_Jacket.jpg" alt="Yellow hoodie">
 				<div class="product-info">
 					<h3>Yellow Hoodies</h3>
 					<h4>Pretty Yellow Hoodie</h4>
@@ -363,26 +502,17 @@
 					</div>
 					<p class="price"> $70</p>
 					<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+					<div class="quantity-controls">
+						<button class="quantity-minus-button">-</button>
+						<input class="cart-input" type="number" value="" min="0">
+						<button class="quantity-plus-button">+</button>
+					</div>
+					<button class="more-info-btn" type="button" > Purchase</button>
+					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
 				</div>
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
+				</div>
+			
 		</section>
-
-	</body>
-	</html>
-		
-
 
 <section id="newsletter">
 	<div class="newstext">
@@ -399,7 +529,7 @@
 
 <footer class="section-p1">
 	<div class="p1">
-		<img id="logo" src="../Images/Floral Line Art Monogram Round Logo (4).png" alt="logo">
+		<img id="logofoot" src="../Pictures/Floral_Line_Art_Monogram_Round_Logo_(4).png" alt="logo for the page">
 		<h4>Contact</h4>
 		<p><strong>Address</strong>:1234Nairobi</p>
 		<p><strong>Phone</strong>023454556767</p>
