@@ -1,50 +1,55 @@
 /*Work by Sylvia*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
-    
+
 }
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
 }
 
-h2{
+h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: #222;
 
 }
-h6{
+
+h6 {
     font-weight: 700;
     font-size: 12px;
 }
-p{
+
+p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
 }
-.section-p1{
+
+.section-p1 {
     padding: 40px 80px;
 }
-.section-m1{
+
+.section-m1 {
     margin: 30px 0;
-}*/
-body{
+}
+
+*/ body {
     width: 100%;
 }
 
 
-button.basic{
+button.basic {
     font-size: 12px;
     font-weight: 600;
     padding: 12px 24px;
@@ -57,71 +62,77 @@ button.basic{
     transition: 0.3s;
 }
 
-button.clear{
+button.clear {
     font-size: 14px;
     font-weight: 600;
     padding: 10px 20px;
     color: white;
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
     border: 1px solid white;
     outline: none;
     transition: 0.3s;
 }
+
 /*Header Stlying*/
 /*resizing logo image*/
-#logo{
+#logo {
     width: 60px;
     height: 60px;
 }
+
 /*Aligning links and logocontained in the header section.Adding background and shadow*/
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 80px;
-    background-color:black;
-    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.6);
+    background-color: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
 
 }
+
 /*Alining the list in a row*/
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center; 
-   
+    justify-content: center;
+
 }
+
 /*Removing list structure*/
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 
 }
+
 /*Removing underlines from links and adding transition */
-#navbar li a{
-    text-decoration:none ;
+#navbar li a {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: aliceblue;
     transition: 0.3 ease;
 }
+
 /*Adding hovering effect to the navigation links and highlight the current page while on it*/
-#navbar li a:hover{
+#navbar li a:hover {
     color: chocolate;
 }
 
 /*Adding underline effect when there is hovering*/
 
-#navbar li a:hover::after{
+#navbar li a:hover::after {
     content: "";
     width: 28%;
     height: 3px;
-    background:chocolate;
+    background: chocolate;
     position: absolute;
     bottom: -3px;
     left: 30px;
@@ -129,9 +140,9 @@ button.clear{
 
 /*Home Page Styling*/
 /*Adding a back ground image and centering the homepage intro section*/
-.homecontent{
- padding-top: 60px;
-   background-image: url('../Images/homepageback.jpg');
+.homecontent {
+    padding-top: 60px;
+    background-image: url('../Images/homepageback.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -141,61 +152,69 @@ button.clear{
     align-items: flex-start;
     justify-content: center;
 }
+
 /*Spacing out the h4 from the other heading tags*/
-.homecontent h4{
+.homecontent h4 {
     padding-bottom: 15px;
 }
+
 /*Styling the h1 tag*/
-.homecontent h1{
-    color:lightslategrey;
+.homecontent h1 {
+    color: lightslategrey;
     padding-right: 50px;
     font-weight: 800;
 }
+
 /*Button styling*/
-.homecontent button{
+.homecontent button {
     background-image: url('../Images/texture-1504364_640.jpg');
     background-color: transparent;
-    color:darkslategrey;
-    border:0;
+    color: darkslategrey;
+    border: 0;
     padding-top: 10px 80px 10px 40px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
 }
+
 /*Styling services information cards*/
 /*Resizing individual images for use in the cards*/
-.featurescont img{
-    width:245px;
-    height:200px ;
+.featurescont img {
+    width: 245px;
+    height: 200px;
 }
+
 /*Making the images in the card responsive*/
-#homefeatures .featurescont img{
+#homefeatures .featurescont img {
     width: 100%;
     margin-bottom: 10px;
 }
+
 /*Displaying the items in the section side by side*/
-#homefeatures{
+#homefeatures {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#homefeatures .featurescont{
+
+#homefeatures .featurescont {
     width: 20%;
     text-align: center;
     padding: 10px 10px 10px 10px;
-    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6, 0.6, 0.6);
     border: 2px solid #222;
     margin-right: 2%;
 }
 
 /*Adding hover effect on the cards*/
-#homefeatures .featurescont:hover{
-    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+#homefeatures .featurescont:hover {
+    box-shadow: 1px 1px 1px rgba(106, 97, 102, 0.06);
 }
+
 /*Adding a border and color to the service name*/
- .featurescont h6{
+.featurescont h6 {
     display: inline-block;
     padding: 8px 6px 4px 2px;
     line-height: 1;
@@ -206,64 +225,71 @@ button.clear{
 }
 
 /*Aligning heading text to the center*/
-#homeproduct{
+#homeproduct {
     text-align: center;
 }
 
-#homeproduct .hpcontainer{
+#homeproduct .hpcontainer {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
     flex-wrap: wrap;
 
 }
+
 /*Fitting image to the container and making it responsive*/
-#homeproduct .hpDetail img{
+#homeproduct .hpDetail img {
     width: 100%;
-    border-radius:  8px; 
+    border-radius: 8px;
 }
+
 /*Product cards styling*/
-#homeproduct .hpDetail{
+#homeproduct .hpDetail {
     width: 23%;
     min-width: 250px;
     padding: 8px 10px;
     border: 1px solid grey;
-    border-radius:  14px;
+    border-radius: 14px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6, 0.6, 0.6);
     margin: 12px 0;
     transition: 0.02s ease;
 }
+
 /*Adding hovering effect on the cards*/
-#homeproduct .hpDetail:hover{
-    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+#homeproduct .hpDetail:hover {
+    box-shadow: 1px 1px 1px rgba(106, 97, 102, 0.06);
 }
+
 /*Aligning card text to the center*/
-.hpdes{
+.hpdes {
     text-align: center;
-    padding:5px 0;
+    padding: 5px 0;
 }
 
 /*Styling span and heading tags in the cards*/
- .hpdes span{
+.hpdes span {
     color: darkslategrey;
     font-weight: 600;
     font-size: 11px;
 }
-.hpdes h5{
+
+.hpdes h5 {
     padding-top: 6px;
-    color:dimgray;
+    color: dimgray;
     font-size: 16px;
     font-weight: 800;
 }
-.hpdes h4{
-    padding-top:6px ;
-    font-size:18px ;
+
+.hpdes h4 {
+    padding-top: 6px;
+    font-size: 18px;
     color: #222;
     font-weight: 600;
 }
+
 /*Adding background image to the section*/
-#cta{
+#cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,35 +300,39 @@ button.clear{
     height: 250px;
     background-size: cover;
     background-position: center;
-} 
+}
 
-#cta h4{
+#cta h4 {
     color: cornsilk;
     font-size: 20px;
     font-weight: 600;
 }
-#cta h2{
+
+#cta h2 {
     color: cornsilk;
     font-size: 32px;
     font-weight: 600;
     padding: 10px 0;
 }
-#cta h2 span{
+
+#cta h2 span {
     color: chocolate;
 }
+
 /*Adding hover to the button*/
-#cta button:hover{
+#cta button:hover {
     background: chocolate;
     color: black;
 }
 
 /*Styling info boxes*/
-#cta2{
+#cta2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#cta2 .infobox{
+
+#cta2 .infobox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,68 +344,75 @@ button.clear{
     background-position: center;
     padding: 30px;
 }
+
 /*Changing background image for 2nd card*/
-#cta2 .infobox2{
-    background-image: url('../Images/man-6251691_640.jpg');  
+#cta2 .infobox2 {
+    background-image: url('../Images/man-6251691_640.jpg');
 }
-.infobox h4{
+
+.infobox h4 {
     color: white;
     font-size: 18px;
     font-weight: 500;
 }
 
-.infobox h2{
+.infobox h2 {
     color: white;
     font-size: 26px;
     font-weight: 700;
 }
-.infobox span{
+
+.infobox span {
     color: white;
     font-size: 12px;
     font-weight: 700;
     padding-bottom: 15px;
 }
+
 /*Adding hover effect to the card*/
-.infobox:hover button{
+.infobox:hover button {
     background: black;
     border: 1px solid chocolate;
 }
 
 /*Styling different collection cards*/
-#cta3{
+#cta3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-image: url('../Images/balancing-1868051_1280.jpg');
-        width: 32%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-        padding: 30px;
-        margin-bottom: 15px;
-    }
-    
- .banner{
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../Images/balancing-1868051_1280.jpg');
+    width: 32%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.banner {
     color: white;
     font-weight: 600;
     font-size: 18px;
 }
-#cta3 .banner2{
+
+#cta3 .banner2 {
     background-image: url('../Images/balancing-1868051_1280.jpg');
 }
-#cta3 .banner3{
+
+#cta3 .banner3 {
     background-image: url('../Images/balancing-1868051_1280.jpg');
 }
 
 /*Styling newsletter area section*/
 /*Adding background image to the area*/
-#newsletter{
+#newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -386,44 +423,48 @@ button.clear{
     background-color: chocolate;
     padding-left: 2%;
     padding-right: 15%;
-    margin-top:1%;
+    margin-top: 1%;
     margin-bottom: 1%;
 
-} 
-#newsletter h4{
+}
+
+#newsletter h4 {
     font-size: 24px;
     font-weight: 700;
     color: white;
-} 
+}
 
-#newsletter p{
+#newsletter p {
     font-size: 18px;
     font-weight: 700;
     color: white;
-} 
+}
 
-#newsletter p span{
+#newsletter p span {
 
     color: black;
-} 
+}
+
 /*Sizing and outlining the email input area*/
-#newsletter input{
+#newsletter input {
     height: 40px;
     padding: 0px 3px;
     font-size: 12px;
     width: 100%;
-    border: 1px solid transparent ;
+    border: 1px solid transparent;
     border-radius: 3px;
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 /*Aligning button and input area in a row*/
-.homeform{
+.homeform {
     display: flex;
     width: 40%;
 }
-.homeform button{
+
+.homeform button {
     background-color: chocolate;
     color: white;
     white-space: nowrap;
@@ -432,48 +473,52 @@ button.clear{
 }
 
 /*Styling Footer*/
-footer{
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-footer .p1{
+
+footer .p1 {
     display: flex;
     flex-direction: column;
-    align-items:flex-start ;
+    align-items: flex-start;
     margin-bottom: 15px;
     width: 25%;
 }
-footer #logo{
+
+footer #logo {
     margin-bottom: 15px;
 }
-footer h4{
+
+footer h4 {
     font-size: 16px;
     padding-bottom: 20px;
 
 }
 
-footer p{
+footer p {
     font-size: 12px;
     padding-bottom: 15px;
-    margin:0 0 6px 0 ;   
+    margin: 0 0 6px 0;
 }
 
-footer a{
+footer a {
     font-size: 14px;
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
 
 }
-.footrow img{
+
+.footrow img {
     width: 80px;
     height: 80px;
     border: 1px solid white;
     border-radius: 4px;
 }
 
-footer .socials{
+footer .socials {
     color: darkslategrey;
     padding-right: 3px;
     cursor: pointer;
@@ -482,14 +527,16 @@ footer .socials{
 footer .socials i:hover {
     color: #222;
 }
-footer a:hover{
+
+footer a:hover {
     color: chocolate;
 }
 
-footer .copyright{
+footer .copyright {
     width: 100%;
     text-align: center;
 }
+
 /*.hero{
 
     min-height:300px;
@@ -519,51 +566,56 @@ footer .copyright{
 }*/
 
 /*Contact us Page styling*/
-#contpage{
-    background: linear-gradient(#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
+#contpage {
+    background: linear-gradient(#e19d3e 10%, #e19d3e 10%, #dcdcdc 30%, #dcdcdc 100%);
 }
 
-.contactus{
+.contactus {
     position: relative;
     width: 100%;
     padding: 40px 100px;
 }
-.contactus .title{
+
+.contactus .title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
-.title h2{
+
+.title h2 {
     color: #222;
     font-weight: 600;
 
 }
 
-.cform{
+.cform {
     grid-area: form;
 }
 
-.cinfo{
+.cinfo {
     grid-area: info;
-    background:chocolate;
+    background: chocolate;
     margin-right: 1%;
     border: 2px solid black;
-   
-}
-.cinfo{
-    color: black;
-}
-.cinfo li{
-    list-style: none;
-}
-.cinfo .infobox div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;  
+
 }
 
-.cinfo .infobox div span{
+.cinfo {
+    color: black;
+}
+
+.cinfo li {
+    list-style: none;
+}
+
+.cinfo .infobox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cinfo .infobox div span {
     min-width: 40px;
     height: 40px;
     color: white;
@@ -576,25 +628,28 @@ footer .copyright{
     margin-right: 28px;
 
 }
-.cmap{
+
+.cmap {
     grid-area: map;
 }
-.fcontainer{
+
+.fcontainer {
     padding: 40px;
     background: white;
-    box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
-.fcontainer{
+
+.fcontainer {
     position: relative;
     display: grid;
-    grid-template-columns:2fr 1fr ;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 4fr;
-    grid-template-areas: 
-    "form info"
-    "form map";
-    grid-gap:40px 20px;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 40px 20px;
     margin-top: 10px;
-    
+
 }
 
 
@@ -604,11 +659,15 @@ footer .copyright{
 /*Adding a back ground image and centering the homepage intro section*/
 
 
-.Mencontent{
-    padding-top: 60px; /*Padding to the top to be 60*/
-    background-image: url('../Pictures/Homepagemen-min.jpg'); /* to set the background image*/
-    height: 90vh;/*height of the image*/
-    width: 100%; /* width of the image*/
+.Mencontent {
+    padding-top: 60px;
+    /*Padding to the top to be 60*/
+    background-image: url('../Pictures/Homepagemen-min.jpg');
+    /* to set the background image*/
+    height: 90vh;
+    /*height of the image*/
+    width: 100%;
+    /* width of the image*/
     background-size: cover;
     background-position: top 25% right 0;
     display: flex;
@@ -619,29 +678,35 @@ footer .copyright{
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*to add box shadow*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*to add box shadow*/
 }
 
 
 .text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    background-color: rgba(255, 255, 255, 0.365);
+    /* Add white background color for text content */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    margin-bottom: 20px;
+    /* Optional: add margin to separate from button */
 }
 
 /*styling for the class men content*/
 .Mencontent h3,
 .Mencontent h4,
 .Mencontent h5,
-.Mencontent p{
+.Mencontent p {
     margin-right: 20px;
     margin: 0;
     color: black;
     font-size: 30px;
 }
 
-.Mencontent button { /*shop button styling*/
+.Mencontent button {
+    /*shop button styling*/
     background-color: #d28315;
     border: none;
     color: rgb(255, 253, 253);
@@ -673,7 +738,7 @@ footer .copyright{
     padding: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 15%; 
+    width: 15%;
     margin: 0 10px 10px 10px;
     box-sizing: border-box;
     color: #0c0c0c;
@@ -686,7 +751,7 @@ footer .copyright{
 }
 
 .product h3,
-.product h4{
+.product h4 {
     margin: 5px 0;
 }
 
@@ -705,27 +770,38 @@ footer .copyright{
 
 
 .product-info :hover {
-    background-color: black; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transform: scale(1.03); /* Scale up slightly on hover */
-    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+    background-color: black;
+    /*  background color on hover to turn to black*/
+    color: white;
+    /* text color on hover to turn to black */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
+    transition: background-color ease;
+    /*  transition using the background color and setting the ease speed */
 }
 
 .product:hover {
-    background-color: black; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
-    transform: scale(1.03); /* Scale up slightly on hover */
+    background-color: black;
+    /*  background color on hover to turn to black*/
+    color: white;
+    /* text color on hover to turn to black */
+    transition: background-color 0.3s ease;
+    /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
 }
 
 .product-info:hover h4 {
-    color: white; /* Change text color of h4 on hover */
+    color: white;
+    /* Change text color of h4 on hover */
 }
 
 
 .product:hover .price {
-    color: white; /* Change discount sale text color to white on hover */
+    color: white;
+    /* Change discount sale text color to white on hover */
 }
+
 .product-info .price {
     display: block;
     margin-top: 5px;
@@ -738,7 +814,8 @@ footer .copyright{
 }
 
 .product:hover .cart-icon {
-    color: white; /* Change icon color to white once it is selected hover */
+    color: white;
+    /* Change icon color to white once it is selected hover */
 }
 
 /*styling for native*/
@@ -758,14 +835,19 @@ footer .copyright{
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
 }
 
 .text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    background-color: rgba(255, 255, 255, 0.365);
+    /* Add white background color for text content */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    margin-bottom: 20px;
+    /* Optional: add margin to separate from button */
 }
 
 .Nativecontent h3,
@@ -817,11 +899,16 @@ footer .copyright{
 }
 
 /*Work by Chris*/
-.KidsPage{
-    padding-top: 60px; /*Padding to the top to be 60*/
-    background-image: url('../Pictures/Homepagekids.jpg'); /* to set the background image*/
-    height: 90vh;/*height of the image*/
-    width: 100%; /* width of the image*/
+.KidsPage {
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 60px;
+    /*Padding to the top to be 60*/
+    background-image: url('../Pictures/Homepagekids-min.jpg');
+    /* to set the background image*/
+    height: 90vh;
+    /*height of the image*/
+    width: 100%;
+    /* width of the image*/
     background-size: cover;
     background-position: top 25% right 0;
     display: flex;
@@ -832,38 +919,45 @@ footer .copyright{
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 12px 12px 2px 1px rgba;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*to add box shadow*/
+
 }
 
 
 .text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.365);
+    /* Add white background color for text content */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    margin-bottom: 20px;
+    /* Optional: add margin to separate from button */
 }
 
 /*styling for the class men content*/
 .KidsPage h3,
 .KidsPage h4,
 .KidsPage h5,
-.KidsPage p{
+.KidsPage p {
     margin-right: 20px;
     margin: 0;
     color: black;
     font-size: 30px;
 }
 
-.KidsPage button  {
+.KidsPage button {
     align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
-    font-family: Brush Script MT (cursive);
+    font-family: Phantomsans, sans-serif;
     font-size: 20px;
     justify-content: center;
     line-height: 1em;
@@ -872,17 +966,17 @@ footer .copyright{
     padding: 19px 24px;
     text-decoration: none;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-  }
-  
+}
 
-.KidsWear {
+
+.KidsWear h5 {
     text-align: center;
     font-size: 110px;
     padding-top: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .Kids-container {
@@ -897,10 +991,24 @@ footer .copyright{
     padding: 10px;
     text-align: center;
     box-shadow: rgba(173, 216, 230, 0.4) 5px 5px, rgba(173, 216, 230, 0.3) 10px 10px, rgba(173, 216, 230, 0.2) 15px 15px, rgba(173, 216, 230, 0.1) 20px 20px, rgba(173, 216, 230, 0.05) 25px 25px;
-    width: 15%; 
-    margin: 0 10px 10px 10px;
+    width: 20%;
+    margin: 0 10px 20px 10px;
     box-sizing: border-box;
-    color:  lightblue;
+    color: lightblue;
+}
+/* Styles for medium-sized screens */
+@media screen and (max-width: 768px) {
+    .Kids {
+        width: 46%;
+    }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    .Kids {
+        width: 100%;
+        margin: 0 0 20px 0; /* Adjust margin for better spacing on smaller screens */
+    }
 }
 
 .Kids img {
@@ -910,7 +1018,7 @@ footer .copyright{
 }
 
 .Kids h3,
-.Kids h4{
+.Kids h4 {
     margin: 5px 0;
 }
 
@@ -929,27 +1037,40 @@ footer .copyright{
 
 
 .Kids-info :hover {
-    background-color: black; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transform: scale(1.03); /* Scale up slightly on hover */
-    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+    background-color: lightblue;
+    ;
+    /*  background color on hover to turn to black*/
+    color: white;
+    /* text color on hover to turn to black */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
+    transition: background-color ease;
+    /*  transition using the background color and setting the ease speed */
 }
 
 .Kids:hover {
-    background-color: black; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
-    transform: scale(1.03); /* Scale up slightly on hover */
+    background-color: lightblue;
+    /*  background color on hover to turn to black*/
+    color: white;
+    /* text color on hover to turn to black */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
+    transition: background-color ease;
+    /*  transition using the background color and setting the ease speed */
 }
 
+
 .Kids-info:hover h4 {
-    color: white; /* Change text color of h4 on hover */
+    color: white;
+    /* Change text color of h4 on hover */
 }
 
 
 .Kids:hover .price {
-    color: white; /* Change discount sale text color to white on hover */
+    color: white;
+    /* Change discount sale text color to white on hover */
 }
+
 .Kids-info .price {
     display: block;
     margin-top: 5px;
@@ -962,16 +1083,35 @@ footer .copyright{
 }
 
 .Kids:hover .cart-icon {
-    color: white; /* Change icon color to white once it is selected hover */
+    color: white;
+    /* Change icon color to white once it is selected hover */
+}
+/* Styles for medium-sized screens */
+@media screen and (max-width: 768px) {
+    .Kids {
+        width: 46%;
+    }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    .Kids {
+        width: 100%;
+    }
 }
 
 /*women page*/
 
-.WomenPage{
-    padding-top: 60px; /*Padding to the top to be 60*/
-    background-image: url('../Pictures/Homepagewomen.jpg'); /* to set the background image*/
-    height: 90vh;/*height of the image*/
-    width: 100%; /* width of the image*/
+.WomenPage {
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 60px;
+    /*Padding to the top to be 60*/
+    background-image: url('../Pictures/Homepagewomen-min.jpg');
+    /* to set the background image*/
+    height: 90vh;
+    /*height of the image*/
+    width: 100%;
+    /* width of the image*/
     background-size: cover;
     background-position: top 25% right 0;
     display: flex;
@@ -982,68 +1122,63 @@ footer .copyright{
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*to add box shadow*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*to add box shadow*/
 }
 
 
 .text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.365);
+    /* Add white background color for text content */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    margin-bottom: 20px;
+    /* Optional: add margin to separate from button */
 }
 
-/*styling for the class men content*/
+/*styling for the class women page*/
 .WomenPage h3,
 .WomenPage h4,
 .WomenPage h5,
-.WomenPage p{
+.WomenPage p {
     margin-right: 20px;
     margin: 0;
     color: black;
     font-size: 30px;
 }
-    .WomenPage button  {
-      align-items: center;
-      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-      border: 0;
-      border-radius: 8px;
-      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      display: flex;
-      font-family: Phantomsans, sans-serif;
-      font-size: 20px;
-      justify-content: center;
-      line-height: 1em;
-      max-width: 100%;
-      min-width: 140px;
-      padding: 19px 24px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      white-space: nowrap;
-      cursor: pointer;
-    }
-    
-    .button-63:active,
-    .button-63:hover {
-      outline: 0;
-    }
-    
-    @media (min-width: 768px) {
-      .button-63 {
-        font-size: 24px;
-        min-width: 196px;
-      }
-    }
 
-.WomenDress {
+.WomenPage button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.WomenDress h5 {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 110px;
     padding-top: 30px;
-    font-family: Courier, monospace;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .Women-container {
@@ -1051,17 +1186,31 @@ footer .copyright{
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* Styles for larger screens */
 .Women {
     background-color: #f4f4f4;
     border: 1px solid #0e65c9;
     padding: 10px;
     text-align: center;
     box-shadow: rgba(173, 216, 230, 0.4) 5px 5px, rgba(173, 216, 230, 0.3) 10px 10px, rgba(173, 216, 230, 0.2) 15px 15px, rgba(173, 216, 230, 0.1) 20px 20px, rgba(173, 216, 230, 0.05) 25px 25px;
-    width: 15%; 
-    margin: 0 10px 10px 10px;
+    width: 22%;
+    margin: 0 10px 20px 10px;
     box-sizing: border-box;
-    color: lightblue;
+    color: lightblue;  
+}
+/* Styles for medium-sized screens */
+@media screen and (max-width: 768px) {
+    .Women {
+        width: 46%;
+    }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    .Women {
+        width: 100%;
+        margin: 0 0 20px 0; /* Adjust margin for better spacing on smaller screens */
+    }
 }
 
 .Women img {
@@ -1071,8 +1220,9 @@ footer .copyright{
 }
 
 .Women h3,
-.Women h4{
+.Women h4 {
     margin: 5px 0;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .Women-stars {
@@ -1090,27 +1240,37 @@ footer .copyright{
 
 
 .Women-info :hover {
-    background-color: lightblue; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transform: scale(1.03); /* Scale up slightly on hover */
-    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+    background-color: lightblue;
+    /*  background color on hover to turn to lightblue*/
+    color: white;
+    /* text color on hover to turn to white */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
+    transition: background-color ease;
+    /*  transition using the background color and setting the ease speed */
 }
 
 .Women:hover {
-    background-color: #0000007c; /*  background color on hover to turn to black*/
-    color: white; /* text color on hover to turn to black */
-    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
-    transform: scale(1.03); /* Scale up slightly on hover */
+    background-color: lightblue;
+    /*  background color on hover to turn to lightblue*/
+    color: white;
+    /* text color on hover to turn to white */
+    transform: scale(1.03);
+    /* Scale up slightly on hover */
+    transition: background-color ease;
+    /*  transition using the background color and setting the ease speed */
 }
 
 .Women-info:hover h4 {
-    color: white; /* Change text color of h4 on hover */
+    color: white;
+    /* Change text color of h4 on hover */
 }
-
 
 .Women:hover .price {
-    color: white; /* Change discount sale text color to white on hover */
+    color: white;
+    /* Change discount sale text color to white on hover */
 }
+
 .Women-info .price {
     display: block;
     margin-top: 5px;
@@ -1123,5 +1283,13 @@ footer .copyright{
 }
 
 .Women:hover .cart-icon {
-    color: white; /* Change icon color to white once it is selected hover */
+    color: white;
+    /* Change icon color to white once it is selected hover */
 }
+
+.Women-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
