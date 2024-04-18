@@ -660,7 +660,38 @@ footer .copyright{
     font-weight: 400;
     cursor: pointer;
     padding: 15px 15px;
+
  }
+
+
+/* Responsive adjustments */
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    #navbar {
+        flex-direction: column; /*  the nav items vertically */
+    }
+
+    #navbar li {
+        padding: 10px 0; /* small  padding and stack links */
+    }
+
+    #navbar li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #navbar li a:hover::after {
+        width: 50%; /* Make underline effect wider on smaller screens */
+        left: 25%; /* Center the underline effect under the text */
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #navbar li a {
+        font-size: 15px; /* a little bit bigger font for tabss */
+    }
+}
 /*Work by Tope*/
 
 /*Men's Page Styling /
