@@ -1,4 +1,4 @@
-/*Work by Sylvia - 22241418*/
+/*Work by Sylvia*/
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +43,7 @@ body{
     width: 100%;
 }
 
+
 button.basic{
     font-size: 12px;
     font-weight: 600;
@@ -70,9 +71,10 @@ button.clear{
 /*Header Stlying*/
 /*resizing logo image*/
 #logo{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 80px;
 }
+
 /*Aligning links and logocontained in the header section.Adding background and shadow*/
 #header{
     display: flex;
@@ -87,30 +89,22 @@ button.clear{
     left: 0;
 
 }
-#offcanvasWithBothOptions{
-    background-color: black;
-    width: 18%;
-    font-size: 14px;
-    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.6);
-    color: white;
-    align-items: center;
-}
 /*Alining the list in a row*/
-.navbar{
+#navbar{
     display: flex;
     align-items: center;
     justify-content: center; 
    
 }
 /*Removing list structure*/
-.navbar li{
+#navbar li{
     list-style: none;
     padding: 0 20px;
     position: relative;
 
 }
 /*Removing underlines from links and adding transition */
-.navbar li a{
+#navbar li a{
     text-decoration:none ;
     font-size: 16px;
     font-weight: 600;
@@ -118,13 +112,13 @@ button.clear{
     transition: 0.3 ease;
 }
 /*Adding hovering effect to the navigation links and highlight the current page while on it*/
-.navbar li a:hover{
+#navbar li a:hover{
     color: chocolate;
 }
 
 /*Adding underline effect when there is hovering*/
 
-.navbar li a:hover::after{
+#navbar li a:hover::after{
     content: "";
     width: 28%;
     height: 3px;
@@ -134,21 +128,11 @@ button.clear{
     left: 30px;
 }
 
-/*Making the outdent tag not visible on normal screen size*/
-#mobile{
-    display: none;
-    align-items: center;
-}
-
-/*Removing visibility of the close icon to only appear in rwd*/
-#close{
-    display: none;
-}
 /*Home Page Styling*/
 /*Adding a back ground image and centering the homepage intro section*/
 .homecontent{
  padding-top: 60px;
-   background-image: url('../Pictures/homepageback-min.jpg');
+   background-image: url('../Images/homepageback.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -170,7 +154,7 @@ button.clear{
 }
 /*Button styling*/
 .homecontent button{
-    background-image: url('../Pictures/texture-1504364_640-min.jpg');
+    background-image: url('../Images/texture-1504364_640.jpg');
     background-color: transparent;
     color:darkslategrey;
     border:0;
@@ -235,10 +219,6 @@ button.clear{
 
 }
 /*Fitting image to the container and making it responsive*/
-.hpDetail img{
-    width: 230px;
-    height: 235px;
-}
 #homeproduct .hpDetail img{
     width: 100%;
     border-radius:  8px; 
@@ -290,7 +270,7 @@ button.clear{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('../Pictures/black-5273871_1280-min.jpg');
+    background-image: url('../Images/black-5273871_1280.jpg');
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -312,9 +292,6 @@ button.clear{
     color: chocolate;
 }
 /*Adding hover to the button*/
-#cta button{
-    background: chocolate;
-}
 #cta button:hover{
     background: chocolate;
     color: black;
@@ -331,7 +308,7 @@ button.clear{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('../Pictures/balancing-1868051_1280-min.jpg');
+    background-image: url('../Images/balancing-1868051_1280.jpg');
     width: 48%;
     height: 300px;
     background-size: cover;
@@ -340,7 +317,7 @@ button.clear{
 }
 /*Changing background image for 2nd card*/
 #cta2 .infobox2{
-    background-image: url('../Pictures/man-6251691_640-min.jpg');  
+    background-image: url('../Images/man-6251691_640.jpg');  
 }
 .infobox h4{
     color: white;
@@ -376,7 +353,7 @@ button.clear{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        background-image: url('../Pictures/pexels-monstera-production-7139183-min\ \(1\).jpg');
+        background-image: url('../Images/balancing-1868051_1280.jpg');
         width: 32%;
         height: 300px;
         background-size: cover;
@@ -391,17 +368,12 @@ button.clear{
     font-size: 18px;
 }
 #cta3 .banner2{
-    background-image: url('../Pictures/Menhomepage\ 2.jpg');
+    background-image: url('../Images/balancing-1868051_1280.jpg');
 }
 #cta3 .banner3{
-    background-image: url('../Pictures/woman20-min.jpg');
+    background-image: url('../Images/balancing-1868051_1280.jpg');
 }
 
-.banner h2,.banner h3{
-    color: white;
-    font-weight: 800;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 /*Styling newsletter area section*/
 /*Adding background image to the area*/
 #newsletter{
@@ -409,7 +381,7 @@ button.clear{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url('../Pictures/black-5273871_1280-min.jpg');
+    background-image: url('../Images/black-5273871_1280.jpg');
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: chocolate;
@@ -473,7 +445,10 @@ footer .p1{
     margin-bottom: 15px;
     width: 25%;
 }
-footer #logo{
+footer #logofoot{
+
+    width: 100px;
+    height: 80px;
     margin-bottom: 15px;
 }
 footer h4{
@@ -519,7 +494,33 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
+/*.hero{
 
+    min-height:300px;
+	background-image:linear-gradient(rgba(243, 241, 242, 0.8),rgba(243, 241, 242, 0.8)),url("..\optimized imges\homepageback-min.jpg");   
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+/*.hero {
+    background-color: linear-gradient(rgba(243, 241, 242, 0.8));
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+#first{
+    height: 600px;
+    width: 600px;
+    float: right;
+
+}*/
 
 /*Contact us Page styling*/
 #contpage{
@@ -527,205 +528,149 @@ footer .copyright{
     
 }
 
-.title h2 , .contact h3{
-    text-align: center;
-}
-form{
+.contactus{
     position: relative;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: 20px auto 80px auto;
-    padding:20px;
-    box-shadow: 1px 1px 1px rgba(10, 10, 9, 0.06);
-}
-span{
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 45px;
-}
-form::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('../Pictures/bicycle-3045580_1280-min.jpg');
-    opacity: 0.4;
-    z-index: -1;
-
+    padding: 40px 100px;
 }
-
-
-/*RWD*/
-@media (max-width:799px) {
-    .section-p1{
-        padding: 40px 40px;
-    }
-    .navbar1{
-        display: none;
-    }
-    .navbar2{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start; 
-        position: fixed;
-        top: 0;
-        right: 0px;
-        height: 100vh;
-        width: -300px;
-        background-color: #222;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
-    }
-    .navbar.active{
-        right: 0px;
-    }
-    .navbar li{
-        margin-bottom: 25px;
-    }
-
-    #mobile{
-        display: flex;
-        align-items: center;
-    }
-    #mobile{
-        color: chocolate;
-        font-size: 24px;
-        padding-left: 20px;
-
-    }
-    #close{
-        display: initial;
-       position: absolute; 
-       top: 30px;
-       left: 30px;
-       color: white;
-       font-size: 24px;
-
-    }
-
-    .homecontent{
-    height: 70vh;
-    padding: 0 60px;
-    background-position:top 30% right 30% ;
-    }
-
-    #homefeatures{
+.contactus .title{
+    display: flex;
     justify-content: center;
-    
-    }
-
-    #homefeatures .featurescont{
-        margin: 15px 15px;
-    }
-
-    #homeproduct .hpcontainer{
-        justify-content: center;
-       
-    }
-
-    #homeproduct .hpDetail{
-        margin: 15px; 
-    }
-
-    #cta{
-       height: 125px; 
-    }
-    #cta2 .infobox{
-        min-width: 100%;
-        height: 150px;
-    }
-
-    #cta3{
-        padding: 0 40px
-    }
-    #cta3 .banner{
-        width:27% ;
-    }
-
-    .homeform{
-        width: 70%;
-    }
+    align-items: center;
+    font-size: 20px;
+}
+.title h2{
+    color: #222;
+    font-weight: 600;
 
 }
 
-@media(max-width:477px){
-    .section-p1{
-        padding :20px;
-        }
-    #navbar1{
-        display: none;
-    }
-        #header{ 
-    padding: 5px 30px;
-    }
+.form{
+    grid-area: form;
+    
+}
 
-    h1{
-       font: size 36px; ; 
-    }
-    h2{
-       font-size: 30px; 
-    }
-    .homecontent{
-        padding: 0 20px;
-        background-position: 55%;
-    }
-    #homefeatures{
-        justify-content: space-between;
-    }
-    #homefeatures .featurescont{
-        width: 155px;
-        margin: 0 0 15px 0;
-    }
-
-    #homeproduct .hpDetail{
-        width: 100%;
-    }
-
-    #cta{
-        height: 200px; 
-     }
-
-    #cta2 .infobox{
-        height: 350px ;
-    }
-    #cta2 .infobox2{
-        margin-top: 20px;
-    }
-    #cta3{
-        padding: 0 20px;
-    }
-
-    #cta3  .banner{
-        width: 100%;
-    } 
-    #newsletter{
-        padding: 40px 20px;
-    }
-    .homeform{
-        width: 100%;
-    }
-    .copyright{
-        text-align: start;
-    }
+.info{
+    grid-area: info;
+    background:chocolate;
+    margin-right: 1%;
+    border: 2px solid black;
    
 }
+.info{
+    color: black;
+  
+}
+.info li{
+    list-style: none;
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  
+}
 
+.info .infobox div span{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 80%;
+    margin-right: 28px;
 
+}
+.map{
+    grid-area: map;
+    
+
+}
+.fcontainer{
+    padding: 40px;
+    background:cornsilk;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
+}
+.fcontainer{
+    position: relative;
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 10px 20px;
+    margin-top: 10px;
+    
+}
+
+.formbox{
+    position: relative;
+    width: 100%;
+}
+
+.formbox .row1 .row2{
+    display: flex;
+    gap: 20px;
+}
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%; 
+}
+
+.formbox .row2.chatbox{
+    width: 100%;
+
+}
+
+.chatbox span{
+    color: #222;
+    margin-top: 10px;
+    margin-bottom:5px ;
+    font-weight: 500;
+}
+ .chatbox input{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+ }
+
+ .chatbox textarea{
+    padding:10px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid grey;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;  
+ }
+
+ .chatbox input[type="submit"]
+ {
+    background:chocolate ;
+    color: #222;
+    border: none;
+    font-size: 14px;
+    max-width: 120px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 15px;
+ }
 /*Work by Tope*/
 
 /*Men's Page Styling /
 /*Adding a back ground image and centering the homepage intro section*/
 
-
-.Mencontent{
-    padding-top: 60px; /*Padding to the top to be 60*/
-    background-image: url('../Pictures/Homepagemen-min.jpg'); /* to set the background image*/
-    height: 90vh;/*height of the image*/
-    width: 100%; /* width of the image*/
+.Mencontent {
+    padding-top: 60px;
+    background-image: url('../Pictures/Homepagemen-min.jpg');
+    height: 90vh;
+    width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
     display: flex;
@@ -736,29 +681,29 @@ form::before{
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*to add box shadow*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* add rounded corners */
-    margin-bottom: 20px; /* add margin to separate from button */
+    background-color: rgba(255, 255, 255, 0.365);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/*styling for the class men content*/
+
+.Mencontent h2,
 .Mencontent h3,
 .Mencontent h4,
 .Mencontent h5,
-.Mencontent p{
+.Mencontent p {
     margin-right: 20px;
     margin: 0;
     color: black;
     font-size: 30px;
 }
 
-.Mencontent button { /*shop button styling*/
+.Mencontent button {
     background-color: chocolate;
     border: none;
     color: rgb(255, 253, 253);
@@ -766,18 +711,24 @@ form::before{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16pxpx;
+    font-size: 16px;
     margin: 4px 2px;
     border-radius: 8px;
 }
+
+
+
 
 .Mencollections h5 {
     text-align: center;
     font-size: 90px;
     padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
-    
-}
 
 .product-container {
     display: flex;
@@ -824,14 +775,14 @@ form::before{
 
 
 .product-info :hover {
-    background-color: black; /*  background color on hover to turn to black*/
+    background-color:  rgb(72, 70, 70); /*  background color on hover to turn to black*/
     color: white; /* text color on hover to turn to black */
     transform: scale(1.03); /* Scale up slightly on hover */
     transition: background-color  ease; /*  transition using the background color and setting the ease speed */
 }
 
 .product:hover {
-    background-color: black; /*  background color on hover to turn to black*/
+    background-color: rgb(72, 70, 70); /*  background color on hover to turn to black*/
     color: white; /* text color on hover to turn to black */
     transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
     transform: scale(1.03); /* Scale up slightly on hover */
@@ -867,12 +818,13 @@ form::before{
 }
 
 
-/*styling for hideen texts*/
+/*styling for  hover texts*/
 #product1-info:hover{
     color: white;
     transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
     transform: scale(1.03); /* Scale up  on hover */
 }
+
 
 
 /* Style for the quantity controls */
@@ -889,7 +841,7 @@ form::before{
     border: 1px solid #ccc; /* Add a border */
     border-radius: 4px; /* for radius for rounded corners */
     background-color: transparent; /* to make background transparent */
-    cursor: pointer; /* to cursor pointer for interaction */
+    cursor: pointer; 
 
 }
 
@@ -898,18 +850,18 @@ form::before{
 .more-info-btn {
     padding: 2px 5px; /* for adjusting the padding padding to control button size */
     margin-top: 5px; /* Add margin to separate buttons from other content */
-    border: 1px solid #ceaf23; /* Add a border with primary color */
-    border-radius: 4px; /* Add border radius for rounded corners */
-    background-color: #ae911d; /* Set background color to primary color */
+    border: 1px solid #ceaf23; /* Add a border with  an put color on it*/
+    border-radius: 4px; /* Add border radius for a litle rectangle that has circular edges */
+    background-color: #ae911d; /* Set background color*/
     color: #fff; /* Set text color to white */
-    cursor: pointer; /* Add cursor pointer for interaction */
+    cursor: pointer; 
    
 }
 
 /* hover effect for purchase and info button */
 .add-to-cart-btn:hover,
 .more-info-btn:hover {
-    background-color: #0056b3; /* to put h color on hover */
+    background-color: #0056b3; /* to put a color on hover */
     border-color: #0056b3; /* to put blue color color on hover */
 }
 
@@ -923,11 +875,77 @@ form::before{
 
 }
 
+/* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .Mencontent {
+      padding-top: 10%; /*  padding for smaller screens */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .text-content {
+      padding: 10px; /* padding for smaller screens */
+      margin-bottom: 10px; /* margin for smaller screens */
+    }
+  
+    .Mencontent h2,
+    .Mencontent h3,
+    .Mencontent h4,
+    .Mencontent h5,
+    .Mencontent p {
+      font-size: 16px; /*  font size for smaller screens */
+    }
+  
+    .Mencontent button {
+      padding: 10px 20px; /*  padding for smaller screens */
+      font-size: 14px; /*  font size for smaller screens */
+      margin: 2px 1px; /* margin for smaller screens */
+    }
+  }
+
+/* For screens that are  than 768px (phones) */
+
+
+@media (max-width: 767px) {
+    .Mencollections h5 {
+      font-size: 48px;
+    }
+  
+    .product {
+      width: 45%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens between 768px and 1023px (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .Mencollections h5 {
+      font-size: 64px;
+    }
+  
+    .product {
+      width: 30%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens 1024px and larger (desktops) */
+  @media (min-width: 1024px) {
+    .Mencollections h5 {
+      font-size: 90px;
+    }
+  
+    .product {
+      width: 20%;
+      margin: 0 10px 10px 10px;
+    }
+  }
+
 /*styling for native*/
 
 .Nativecontent {
     padding-top: 60px;
-    background-image: url('../Pictures/Native/Native\ and\ sun.jpg');
+    background-image: url('../Pictures/Native_and_sun-min.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -943,32 +961,28 @@ form::before{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-.text-content {
-    background-color: rgba(255, 255, 255, 0.365); /* Add background color for text content */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* add rounded corners */
-    margin-bottom: 20px; /* add margin to separate from button */
-}
-
 
 
 /*styling for native page */
 
+.Nativecollection h5 {
 
-
-.Nativecollection {
     text-align: center;
-    font-size: 110px;
+    font-size: 90px;
     padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+  
+.Nativecontent h2,
 .Nativecontent h3,
 .Nativecontent h4,
-.Nativecontent h5,
 .Nativecontent p {
     margin-right: 20px;
     margin: 0;
     color: black;
-    font-size: 25x;
+    font-size: 30px;
 }
 
 .Nativecontent button {
@@ -986,12 +1000,60 @@ form::before{
 }
 
 
-/*styling for native page*/
 
+/* Correcting Font Sizes in Existing CSS */
+.Nativecollection h5 {
+    text-align: center;
+    font-size: 36px; /* Adjusted for better scaling on all devices */
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Nativecontent h3,
+.Nativecontent h4,
+.Nativecontent h5,
+.Nativecontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 25px; /* Corrected from '25x' to '25px' */
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .Nativecontent {
+        padding-top: 30px; /* Less padding on top for smaller screens */
+        height: auto; /* Height becomes auto to avoid cutting off content */
+        padding: 10px; /* padding around the content */
+    }
+
+    .text-content {
+        padding: 10px; /* Smaller padding in text content for smaller screens */
+        margin-bottom: 10px; /* Smaller margin below the text content */
+    }
+
+    .Nativecontent h2,
+    .Nativecontent h3,
+    .Nativecontent h4,
+    .Nativecontent p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .Nativecontent button {
+        padding: 10px 20px; /* reduced padding */
+        font-size: 14px; /* smaller font sizes */
+        margin: 4px 2px; /* reducing the margin */
+    }
+}
+
+/*styling for the game */
 
 #gamecontainer {
     text-align: center;
-
 }
 
 #gamelayer {
@@ -1038,8 +1100,8 @@ form::before{
 .text-content {
     background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
     padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-bottom: 20px; /* Optional: add margin to separate from button */
+    border-radius: 10px; /*  add rounded corners */
+    margin-bottom: 20px; /*  add margin to separate from button */
 }
 
 /*styling for the class men content*/
