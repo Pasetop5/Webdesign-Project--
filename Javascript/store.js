@@ -10,10 +10,3 @@ function purchaseHandler() {
 purchaseButtons.forEach(button => {
     button.addEventListener('click', purchaseHandler);
 });
-
-/*Work by Sylvia*/
-
-function showMessage() {
-    alert("This feature is currently unavailable");
-
-}
