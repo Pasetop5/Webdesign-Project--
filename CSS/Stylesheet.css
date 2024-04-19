@@ -1,5 +1,5 @@
 /*Work by Sylvia*/
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +48,6 @@ p {
     width: 100%;
 }
 
-
 button.basic {
     font-size: 12px;
     font-weight: 600;
@@ -80,7 +79,6 @@ button.clear {
     width: 60px;
     height: 60px;
 }
-
 /*Aligning links and logocontained in the header section.Adding background and shadow*/
 #header {
     display: flex;
@@ -95,9 +93,8 @@ button.clear {
     left: 0;
 
 }
-
 /*Alining the list in a row*/
-#navbar {
+#navbar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +102,7 @@ button.clear {
 }
 
 /*Removing list structure*/
-#navbar li {
+#navbar li{
     list-style: none;
     padding: 0 20px;
     position: relative;
@@ -113,8 +110,8 @@ button.clear {
 }
 
 /*Removing underlines from links and adding transition */
-#navbar li a {
-    text-decoration: none;
+#navbar li a{
+    text-decoration:none ;
     font-size: 16px;
     font-weight: 600;
     color: aliceblue;
@@ -122,13 +119,13 @@ button.clear {
 }
 
 /*Adding hovering effect to the navigation links and highlight the current page while on it*/
-#navbar li a:hover {
+#navbar li a:hover{
     color: chocolate;
 }
 
 /*Adding underline effect when there is hovering*/
 
-#navbar li a:hover::after {
+#navbar li a:hover::after{
     content: "";
     width: 28%;
     height: 3px;
@@ -138,11 +135,21 @@ button.clear {
     left: 30px;
 }
 
+/*Making the outdent tag not visible on normal screen size*/
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+/*Removing visibility of the close icon to only appear in rwd*/
+#close{
+    display: none;
+}
 /*Home Page Styling*/
 /*Adding a back ground image and centering the homepage intro section*/
-.homecontent {
-    padding-top: 60px;
-    background-image: url('../Images/homepageback.jpg');
+.homecontent{
+ padding-top: 60px;
+   background-image: url('../Images/homepageback.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -166,7 +173,7 @@ button.clear {
 }
 
 /*Button styling*/
-.homecontent button {
+.homecontent button{
     background-image: url('../Images/texture-1504364_640.jpg');
     background-color: transparent;
     color: darkslategrey;
@@ -238,7 +245,7 @@ button.clear {
 }
 
 /*Fitting image to the container and making it responsive*/
-#homeproduct .hpDetail img {
+#homeproduct .hpDetail img{
     width: 100%;
     border-radius: 8px;
 }
@@ -295,7 +302,7 @@ button.clear {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('../Images/black-5273871_1280.jpg');
+    background-image: url('../Pictures/black-5273871_1280-min.jpg');
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -320,7 +327,7 @@ button.clear {
 }
 
 /*Adding hover to the button*/
-#cta button:hover {
+#cta button:hover{
     background: chocolate;
     color: black;
 }
@@ -337,7 +344,7 @@ button.clear {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('../Images/balancing-1868051_1280.jpg');
+    background-image: url('../Pictures/balancing-1868051_1280-min.jpg');
     width: 48%;
     height: 300px;
     background-size: cover;
@@ -346,8 +353,8 @@ button.clear {
 }
 
 /*Changing background image for 2nd card*/
-#cta2 .infobox2 {
-    background-image: url('../Images/man-6251691_640.jpg');
+#cta2 .infobox2{
+    background-image: url('../Images/man-6251691_640.jpg');  
 }
 
 .infobox h4 {
@@ -381,35 +388,37 @@ button.clear {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url('../Images/balancing-1868051_1280.jpg');
-    width: 32%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-    margin-bottom: 15px;
-}
-
-.banner {
+.banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('../Images/balancing-1868051_1280.jpg');
+        width: 32%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
+    
+ .banner{
     color: white;
     font-weight: 600;
     font-size: 18px;
 }
-
-#cta3 .banner2 {
+#cta3 .banner2{
+    background-image: url('../Images/balancing-1868051_1280.jpg');
+}
+#cta3 .banner3{
     background-image: url('../Images/balancing-1868051_1280.jpg');
 }
 
-#cta3 .banner3 {
-    background-image: url('../Images/balancing-1868051_1280.jpg');
+.banner h2,.banner h3{
+    color: white;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 /*Styling newsletter area section*/
 /*Adding background image to the area*/
 #newsletter {
@@ -417,7 +426,7 @@ button.clear {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url('../Images/black-5273871_1280.jpg');
+    background-image: url('../Pictures/black-5273871_1280-min.jpg');
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: chocolate;
@@ -535,7 +544,6 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
-
 /*.hero{
 
     min-height:300px;
@@ -569,52 +577,53 @@ footer .copyright {
     background: linear-gradient(#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
 }
 
-.contactus {
+.contactus{
     position: relative;
-    width: 100%;
-    padding: 40px 100px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto 80px auto;
+    padding:20px;
+    box-shadow: 1px 1px 1px rgba(10, 10, 9, 0.06);
 }
-
-.contactus .title {
+.contactus .title{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
-
-.title h2 {
+.title h2{
     color: #222;
     font-weight: 600;
 
 }
 
-.cform{
+.form{
     grid-area: form;
     
 }
 
-.cinfo{
+.info{
     grid-area: info;
-    background: chocolate;
+    background:chocolate;
     margin-right: 1%;
     border: 2px solid black;
-
+   
 }
-.cinfo{
+.info{
     color: black;
   
 }
-.cinfo li{
+.info li{
     list-style: none;
 }
-.cinfo .infobox div{
+.info .infobox div{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
 }
 
-.cinfo .infobox div span{
-    min-width: 40px;
+.info .infobox div span{
+    width: 40px;
     height: 40px;
     color: white;
     background: black;
@@ -626,29 +635,27 @@ footer .copyright {
     margin-right: 28px;
 
 }
-.cmap{
+.map{
     grid-area: map;
     
 
 }
-
-.fcontainer {
+.fcontainer{
     padding: 40px;
-    background: white;
+    background:cornsilk;
     box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
 }
-
-.fcontainer {
+.fcontainer{
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:2fr 1fr ;
     grid-template-rows: 5fr 4fr;
     grid-template-areas: 
     "form info"
     "form map";
-    grid-gap:40px 20px;
+    grid-gap: 10px 20px;
     margin-top: 10px;
-
+    
 }
 
 .formbox{
@@ -717,26 +724,34 @@ footer .copyright {
         flex-direction: column; /*  the nav items vertically */
     }
 
-    #navbar li {
-        padding: 10px 0; /* small  padding and stack links */
+    #cta2 .infobox{
+        height: 350px ;
+    }
+    #cta2 .infobox2{
+        margin-top: 20px;
+    }
+    #cta3{
+        padding: 0 20px;
     }
 
-    #navbar li a {
-        font-size: 14px; /* Adjust font size for smaller screens */
+    #cta3  .banner{
+        width: 100%;
+    } 
+    #newsletter{
+        padding: 40px 20px;
     }
-
-    #navbar li a:hover::after {
-        width: 50%; /* Make underline effect wider on smaller screens */
-        left: 25%; /* Center the underline effect under the text */
+    .homeform{
+        width: 100%;
     }
+    .copyright{
+        text-align: start;
+    }
+   
 }
 
-/* For tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-    #navbar li a {
-        font-size: 15px; /* a little bit bigger font for tabss */
-    }
-}
+
+
+
 /*Work by Tope*/
 
 /*Men's Page Styling /
