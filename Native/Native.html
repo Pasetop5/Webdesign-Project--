@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link  href="../CSS/Stylesheet.css" rel="stylesheet"><!--link to Stylesheet-->
-			<script src="../Javascript/store.js" defer></script> <!-- link to javascript-->
-			<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> <!-- google fonts -->
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Google fonts-->
-			<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-			<script src="https://kit.fontawesome.com/yourcode.js" > </script><!--fontawesome-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- font awesome-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media icons-->
-		<title> Kuvira_Native</title>
-	</head>
-	<body>
-		<section id="header">
-			<a href="../Home/index.html"><img id="logo" src="../Pictures/kuviralogo.png" alt="Logo top"></a> <!-- Inserting the logo-->
-			<div>
-				<ul id="navbar"> <!-- Creating the navigation bar-->
-					<li><a href="../Home/index.html">Home</a></li>
-					<li><a href="../Men/Men.html">Men</a></li>
-					<li><a href="../Women/Women.html">Women</a></li>
-					<li><a href="../children/children.html">Kids</a></li>
-					<li><a href="../Native/Native.html">Native</a></li>
-					<li><a href="../Contactus/contactus.html">Contact</a></li>
-				</ul>
-			</div>
-		</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvira-Men</title>
+    <link href="../CSS/Stylesheet.css" rel="stylesheet"><!-- Link to Stylesheet -->
+	<script src="https://kit.fontawesome.com/99c191925e.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google Fonts preconnect -->
+    <!-- Bootstrap -->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+	<section id="header">
+		<a href="../Home/index.html"><img id="logo" src="../Pictures/kuviralogo.png" alt="Logo top"></a> <!-- Inserting the logo-->
+					<div>
+						<ul class="navbar " id="navbar1">
+							<li><a href="../Home/index.html">Home</a></li>
+							<li><a href="../Men/Men.html">Men</a></li>
+							<li><a href="../Women/Women.html">Women</a></li>
+							<li><a href="../children/children.html">Kids</a></li>
+							<li><a href="../Native/Native.html">Native</a></li>
+							<li><a href="../Contactus/contactus.html">Contact</a></li>
+		
+						</ul>
+					</div>
+					<div id="mobile">
+						<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i  id="bar" class="fa fa-outdent"></i></button>
+							<!--<li ><i  id="bar" class="fa fa-outdent"></i></li>-->	
+					<div class=" offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"  id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+						<div class="offcanvas-header">
+						  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">KUVIRA FASHION LINE</h5>
+						  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						  
+						</div>
+						<div class="offcanvas-body">
+							<a href="../Home/index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a>
+							<ul class=" navbar navbar2">
+								<li><a href="../Home/index.html">Home</a></li>
+								<li><a href="../Men/Men.html">Men</a></li>
+								<li><a href="../Women/Women.html">Women</a></li>
+								<li><a href="../children/children.html">Kids</a></li>
+								<li><a href="../Native/Native.html">Native</a></li>
+								<li><a href="../Contactus/contactus.html">Contact</a></li>
+			
+							</ul>
+						</div>
+						</div>
+					  </div>
+				</section>
+				
 		<section class="Nativecontent"> 
 			<div class="text-content">
 				<h2>Explore Top African Attires</h2> 
@@ -463,70 +487,71 @@
 
 			</section>
 
-<section id="newsletter">
-	<div class="newstext">
-		<h4>Sign up for our newsletter</h4>
-		<p>Get updates on <span>offers</span> and keep up with our collections.</p>
-	</div>
+			<section id="newsletter">
+				<div class="newstext">
+					<h4>Sign up for our newsletter</h4>
+					<p>Get updates on <span>offers</span> and keep up with our collections.</p>
+				</div>
+				
+				<div class="homeform">
+					<input type="text" placeholder="Email Address">
+					<button class="basic">Sign Up</button>
+				</div>
+			</section>
 	
-	<div class="homeform">
-		<input type="text" placeholder="Email Address">
-		<button class="basic">Sign Up</button>
-	</div>
-</section>
-
-
-<footer class="section-p1">
-	<div class="p1">
-		<img id="logofoot" src="../Pictures/Floral_Line_Art_Monogram_Round_Logo_(4).png" alt="logo for the page">
-		<h4>Contact</h4>
-		<p><strong>Address</strong>:1234Nairobi</p>
-		<p><strong>Phone</strong>023454556767</p>
-		<p><strong>Hours</strong>9:00-21:00,Mon-Sun</p>
-		<div class="socials">
-			<h4>Find us on Socials</h4>
-			<div class="icons">
-				<i class="fa fa-facebook-official"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-youtube"></i>
-			</div>
-		</div>
-	</div>
-
-	<div class="p1">
-		<h4>Useful Links</h4>
-		<a href="#">Home</a>
-		<a href="#">Men</a>
-		<a href="#">Women</a>
-		<a href="#">Native</a>
-		<a href="#">Kids</a>
-		<a href="#">Contact Us</a>
-	</div>
-
-	<div class="p1">
-		<h4>My Account</h4>
-		<a href="#">Sign In</a>
-		<a href="#">Help</a>
-		<a href="#">Report A problem</a>
-	</div>
-
-	<div class="homepagespay">
-		<h4>Payment Options</h4>
-		<p>Secured Payment Gateways</p>
-		<div class="footrow">
-			<img src="../Images/electronic-payments-2570939_640.jpg" alt="visa">
-			<img src="../Images/master-card-2962135_640.png" alt="mastercard">
-			<img src="../Images/credit-6598773_640.png" alt="American Express">
-		</div>	
-	</div>
-
-	<div class="copyright">
-		<p>Kuvira Fashion © 2024.
-		All Rights Reserved.</p>
-	</div>
-
-</footer>
-
-</body>
-</html>
+			<footer class="section-p1">
+				<div class="p1">
+					<img id="logo" src="../Images/Floral Line Art Monogram Round Logo (4).png" alt="logo">
+					<h4>Contact</h4>
+					<p><strong>Address</strong>:1234Nairobi</p>
+					<p><strong>Phone</strong>023454556767</p>
+					<p><strong>Hours</strong>9:00-21:00,Mon-Sun</p>
+					<div class="socials">
+						<h4>Find us on Socials</h4>
+						<div class="icons">
+							<i class="fa fa-facebook-official"></i>
+							<i class="fa fa-instagram"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-youtube"></i>
+						</div>
+					</div>
+				</div>
+	
+				<div class="p1">
+					<h4>Useful Links</h4>
+					<a href="../Home/index.html">Home</a>
+					<a href="../Men/Men.html">Men</a>
+					<a href="../Women/Women.html">Women</a>
+					<a href="../Native/Native.html">Native</a>
+					<a href="../children/children.html">Kids</a>
+					<a href="../Contactus/contactus.html">Contact Us</a>
+				</div>
+	
+				<div class="p1">
+					<h4>My Account</h4>
+					<a onclick="showMessage()" href="#">Sign In</a>
+					<a href="../Contactus/contactus.html">Help</a>
+					<a href="../Contactus/contactus.html">Report A problem</a>
+				</div>
+	
+				<div class="homepagespay">
+					<h4>Payment Options</h4>
+					<p>Secured Payment Gateways</p>
+					<div class="footrow">
+						<img src="../Images/electronic-payments-2570939_640.jpg" alt="visa">
+						<img src="../Images/master-card-2962135_640.png" alt="mastercard">
+						<img src="../Images/credit-6598773_640.png" alt="American Express">
+					</div>	
+				</div>
+	
+				<div class="copyright">
+					<p>Kuvira Fashion © 2024.
+					All Rights Reserved.</p>
+				</div>
+	
+			</footer>
+			
+			<!--Bootstrap-->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+	</html>
